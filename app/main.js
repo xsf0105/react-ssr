@@ -12,9 +12,9 @@ import { render } from 'react-dom'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 import App from './components/App'
-import About from './components/About'
-import Repos from './components/Repos'
-import Repo from './components/Repo'
+import About from './components/Main'
+import Repos from './components/Explore'
+import Repo from './components/News'
 import Home from './components/Home'
 
 render((

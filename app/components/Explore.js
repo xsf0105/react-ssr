@@ -18,7 +18,8 @@ export default React.createClass({
     return (
       <div>
         <h2>Repos</h2>
-        <ul>
+
+        /*<ul>
           <li><NavLink to="/repos/reactjs/react-router">React Router</NavLink></li>
           <li><NavLink to="/repos/facebook/react">React</NavLink></li>
           <li>
@@ -28,7 +29,8 @@ export default React.createClass({
               <button type="submit">Go</button>
             </form>
           </li>
-        </ul>
+        </ul>*/
+
         {this.props.children}
       </div>
     )

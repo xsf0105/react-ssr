@@ -1,23 +1,21 @@
 import React from 'react'
-//import ReactDOM from 'react-dom'
 import { render } from 'react-dom'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+
 import App from './components/App'
-import About from './components/About'
-import Repos from './components/Repos'
-import Repo from './components/Repo'
+
 import Home from './components/Home'
+import Main from './components/Main'
+import Explore from './components/Explore'
+import News from './components/News'
 
 render((
     <Router history={browserHistory}>
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
-
-            <Route path="/repos" component={Repos}>
-                <Route path="/repos/:userName/:repoName" component={Repo}/>
-            </Route>
-
-            <Route path="/about" component={About}/>
+            <Route path="/news" component={News}/>
+            <Route path="/explore" component={Explore}/>
+            <Route path="/main" component={Main}/>
         </Route>
     </Router>
 ), document.getElementById('app'))
