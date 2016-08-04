@@ -2,7 +2,7 @@ import React from 'react'
 
 export default React.createClass({
   render() {
-    /*const { userName, repoName } = this.props.params*/
+    const { userName, repoName } = this.props.params
 
     return (
       <div>
