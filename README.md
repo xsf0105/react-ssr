@@ -1,5 +1,5 @@
 This repo is a project for React-Babel-Webpack project. 
-You can use it to learn you wanted!
+
 
 ## Features
 
