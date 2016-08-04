@@ -1,4 +1,5 @@
-This repo is a boilerplate for React-Babel-Webpack project. You could use it as a base to build your own web app.
+This repo is a project for React-Babel-Webpack project. 
+You can use it to learn you wanted!
 
 ## Features
 
@@ -17,7 +18,7 @@ This repo is a boilerplate for React-Babel-Webpack project. You could use it as 
 First, you should clone the repo and install the dependencies.
 
 ```bash
-$ git clone git@github.com:ruanyf/react-babel-webpack-boilerplate.git <yourAppName>
+$ git clone git@github.com:allan2coder/React-SPA-weixin.git <yourAppName>
 $ cd <yourAppName>
 $ npm install
 ```
@@ -28,7 +29,7 @@ Then, launch the boilerplate app.
 $ npm start
 ```
 
-You should see a new browser tap opening and a title of "Hello World" in http://127.0.0.1:8080.
+You should see a new browser tap opening and a page of "index.html" in http://127.0.0.1:8080.
 
 From there, you start to develop your own code in the `app` directory. When you finish coding, use `npm run build` or `npm run deploy` to build the static files.
 
