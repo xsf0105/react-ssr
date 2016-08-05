@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <meta content="yes" name=" apple-mobile-web-app-capable" />
+    <title>教育详情</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <link rel="stylesheet" href="lib/weui/dist/style/weui.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="edu-details" v-cloak>
+    <header>
+        <a class="back" href="window.history.back();"><img src="img/arrow_left.png" alt=""></a>
+        <h4>教育详情</h4>
+    </header>
+
+    <div class="toper-tit">
+        <div class="container">
+            <h1>{{artInfo.serviceName}}</h1>
+            <div class="mob-author clearfix">
+                <span class="fl">{{artInfo.createDate}}</span>
+            <span class="fr share" v-bind:class="{'is-active':isShare}" @click="share()">
+                <i class="icon iconfont">&#xe604;</i>
+            </span>
+            <span class="fr nice" v-bind:class="{'is-active':isActive}" @click="store()">
+                <i class="icon iconfont">&#xe614;</i>
+            </span>
+            <span class="fr watch">
+                <i class="icon iconfont">&#xe615;</i>
+                {{artInfo.clickNum}}
+            </span>
+            </div>
+        </div>
+    </div>
+
+    <section class="section2">
+        <div class="container">
+            <h1>服务依据</h1>
+            <p>{{artInfo.serviceBasis}}</p>
+            <br>
+            <h1>服务对象</h1>
+            <p>{{artInfo.serviceObject}}</p>
+            <br>
+        </div>
+    </section>
+
+</body>
+<script data-main="js/edu-details" src="lib/requirejs/require.js"></script>
+</html>

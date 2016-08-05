@@ -1,4 +1,5 @@
 import React from 'react'
+import Slider from './Slider'
 
 export default React.createClass({
   render() {
@@ -6,12 +7,7 @@ export default React.createClass({
         <div>
             <div className="banner">
                 <div className="swiper-container">
-                    <div className="swiper-wrapper">
-                        <div className="swiper-slide"><img src="img/index_banner.png" alt=""/></div>
-                        <div className="swiper-slide">Slide 2</div>
-                        <div className="swiper-slide">Slide 3</div>
-                    </div>
-                    <div className="swiper-pagination"></div>
+                    <Slider />
                 </div>
                 <div className="top-nav clearfix">
                     <div>

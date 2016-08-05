@@ -16,6 +16,22 @@
 /* index page */
 .banner {
   margin-bottom: 10px; }
+.banner .swiper-container{
+    margin: 0 auto;
+    color: #333;
+    height: 145px;
+    background: #419be0;
+}
+.slick-dots{
+    bottom: 0!important;
+}
+.slick-dots li{
+    margin: 0!important;
+}
+.slick-dots li button:before{
+    width: 4px;
+    height: 4px;
+}
   .banner .swiper-container img {
     width: 100%;
     height: 145px;
