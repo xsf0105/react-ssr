@@ -1,5 +1,5 @@
 import React from 'react'
-import NavLink from './NavLink'
+import NavLink from '../lib/NavLink'
 
 export default React.createClass({
   contextTypes: {

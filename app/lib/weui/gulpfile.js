@@ -25,7 +25,7 @@ gulp.task('build:style', function (){
         ' * Licensed under the <%= pkg.license %> license',
         ' */',
         ''].join('\n');
-    gulp.src('src/style/weui.less', option)
+    gulp.src('lib/style/weui.less', option)
         .pipe(sourcemaps.init())
         .pipe(less().on('error', function (e) {
             console.error(e.message);
@@ -47,13 +47,13 @@ gulp.task('build:style', function (){
 });
 
 gulp.task('build:example:assets', function (){
-    gulp.src('src/example/**/*.?(png|jpg|gif|js)', option)
+    gulp.src('lib/example/**/*.?(png|jpg|gif|js)', option)
         .pipe(gulp.dest(dist))
         .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('build:example:style', function (){
-    gulp.src('src/example/example.less', option)
+    gulp.src('lib/example/example.less', option)
         .pipe(less().on('error', function (e){
             console.error(e.message);
             this.emit('end');
@@ -68,7 +68,7 @@ gulp.task('build:example:style', function (){
 });
 
 gulp.task('build:example:html', function (){
-    gulp.src('src/example/index.html', option)
+    gulp.src('lib/example/index.html', option)
         .pipe(tap(function (file){
             var dir = path.dirname(file.path);
             var contents = file.contents.toString();
@@ -89,10 +89,10 @@ gulp.task('build:example', ['build:example:assets', 'build:example:style', 'buil
 gulp.task('release', ['build:style', 'build:example']);
 
 gulp.task('watch', ['release'], function () {
-    gulp.watch('src/style/**/*', ['build:style']);
-    gulp.watch('src/example/example.less', ['build:example:style']);
-    gulp.watch('src/example/**/*.?(png|jpg|gif|js)', ['build:example:assets']);
-    gulp.watch('src/**/*.html', ['build:example:html']);
+    gulp.watch('lib/style/**/*', ['build:style']);
+    gulp.watch('lib/example/example.less', ['build:example:style']);
+    gulp.watch('lib/example/**/*.?(png|jpg|gif|js)', ['build:example:assets']);
+    gulp.watch('lib/**/*.html', ['build:example:html']);
 });
 
 gulp.task('server', function () {

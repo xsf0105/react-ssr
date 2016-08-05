@@ -1,5 +1,6 @@
 import React from 'react'
-import Slider from './Slider'
+import Slider from '../lib/Slider.jsx'
+import NavLink from '../lib/NavLink.jsx'
 
 export default React.createClass({
   render() {
@@ -45,10 +46,10 @@ export default React.createClass({
                     </a>
                 </div>
                 <div className="col3">
-                    <a href="edu.html">
+                    <NavLink to="/edu">
                         <img src="img/menu_edu.png" alt=""/>
-                            教育助学
-                    </a>
+                        教育助学
+                    </NavLink>
                 </div>
                 <div className="col3">
                     <a href="">

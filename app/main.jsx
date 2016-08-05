@@ -2,12 +2,12 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
-import App from './components/App'
-
-import Home from './components/Home'
-import Main from './components/Main'
-import Explore from './components/Explore'
-import News from './components/News'
+import App from './components/index/App.jsx'
+import Home from './components/index/Home.jsx'
+import Main from './components/main/Main.jsx'
+import Explore from './components/explore/Explore.jsx'
+import News from './components/news/News.jsx'
+import Edu from './components/edu/Edu.jsx'
 
 render((
     <Router history={browserHistory}>
@@ -17,5 +17,6 @@ render((
             <Route path="/explore" component={Explore}/>
             <Route path="/main" component={Main}/>
         </Route>
+        <Route path="/edu" component={Edu}/>
     </Router>
 ), document.getElementById('app'))
