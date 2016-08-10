@@ -1,4 +1,5 @@
 import React from 'react'
+import 'whatwg-fetch'
 
 export default class Edu extends React.Component {
     constructor(props) {
@@ -15,10 +16,25 @@ export default class Edu extends React.Component {
     // 单击列表
     rowClick = (e) => {
         console.log(e.key);
+        location.href='';
     }
-    // 渲染后执行
     componentDidMount() {
-        this.loadData();
+        fetch('http://115.239.229.12:8020/policy/findPage', {
+            method: 'POST',
+            body: JSON.stringify({
+                "page":1,
+                "rows":10
+            })
+        })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (result) {
+            console.log(result.data);
+        })
+        .catch (function (error) {
+            console.log('Request failed', error);
+        });
     }
 
     render() {

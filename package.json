@@ -19,7 +19,8 @@
     "react": "15.x",
     "react-dom": "15.x",
     "react-router": "^2.6.1",
-    "react-slick": "^0.12.2"
+    "react-slick": "^0.12.2",
+    "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "6.x",
