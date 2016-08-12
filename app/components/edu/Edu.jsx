@@ -1,11 +1,9 @@
 import React from 'react'
+
 import LoadList from './LoadList.jsx'
 import Search from './Search.jsx'
 
 export default class Edu extends React.Component {
-    componentDidMount() {
-        //console.log("ok",1);
-    }
     render() {
         return(
             <div>
@@ -17,11 +15,8 @@ export default class Edu extends React.Component {
                         <img src="img/title_edu.png" alt="" />
                     </div>
                 </div>
-
                 <Search></Search>
-
                 <LoadList></LoadList>
-
             </div>
         )
   }

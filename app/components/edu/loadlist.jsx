@@ -1,6 +1,7 @@
 import React from 'react'
 import 'whatwg-fetch'
 import { Router, Route,Link, browserHistory, IndexRoute } from 'react-router'
+import service from '../common/config.jsx'
 
 export default class LoadList extends React.Component {
     constructor() {
@@ -16,7 +17,7 @@ export default class LoadList extends React.Component {
     }
     loadList = () => {
         var _this = this;
-        fetch('http://115.239.229.12:8020/educationStudy/findPage', {
+        fetch(service.SERVICE.EDU.LIST, {
             method: 'POST',
             body: JSON.stringify({
                 "keyword":_this.state.srhMode?keyWord:'',
@@ -60,17 +61,13 @@ export default class LoadList extends React.Component {
             }
         }
     }
-    rowClick = (id) => {
-        console.log(id);
-        //<a href="javascript:void(0)">{repo.serviceName}</a>
-    }
     render() {
         var _this = this;
         var repoList = this.state.renderArr.map(function (repo,index) {
             return (
-                <li onClick={ _this.rowClick.bind(this,repo.id)} key={index}>
+                <li key={index}>
                     { index==0 || index==1 || index==2 ? <img className="hot-icon" src="img/hot.png" alt="" width="35" /> : null }
-                    <Link to="/edu-details">{repo.serviceName}</Link>
+                    <Link to={{pathname:"/edu-details",query:{id:repo.id}}}>{repo.serviceName}</Link>
                 </li>
             );
         });
