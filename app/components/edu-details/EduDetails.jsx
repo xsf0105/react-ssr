@@ -2,8 +2,7 @@ import React from 'react'
 import service from '../common/config.jsx'
 import utilities from '../common/Utilities.jsx'
 
-var id = utilities.getParameterByName('id');
-console.log(id);
+const id = utilities.getParameterByName('id');
 
 export default class EduDetails extends React.Component{
     constructor() {
