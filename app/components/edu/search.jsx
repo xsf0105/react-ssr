@@ -12,11 +12,3 @@ export default class Search extends React.Component {
         )
     }
 }
-
-/*
-<div className="no-res">
-    <div className="container">
-        <img src="img/nores.png" alt="" />
-        <h4>无搜索结果</h4>
-    </div>
-</div>*/

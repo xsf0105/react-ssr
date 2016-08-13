@@ -2,7 +2,7 @@ import React from 'react'
 import service from '../common/config.jsx'
 import utilities from '../common/Utilities.jsx'
 
-const id = utilities.getParameterByName('id');
+var id = utilities.getParameterByName('id');
 console.log(id);
 
 export default class EduDetails extends React.Component{
@@ -11,7 +11,7 @@ export default class EduDetails extends React.Component{
         this.state = {
             artInfo: {},
             isActive: false,
-            isShare: false
+            isShare: false,
         };
     }
     loadData() {
@@ -27,17 +27,38 @@ export default class EduDetails extends React.Component{
             })
             .then(function (result) {
                 console.log(result.data);
-                console.log(result.data);
                 _this.setState({artInfo: result.data.result})
+                _this.setState({title: result.data.result.serviceName})
             });
     }
+    store() {
+        var _this = this;
+        if(!_this.state.isActive)
+            var url = service.SERVICE.EDU.UNSTORE;
+        else
+            var url = service.SERVICE.EDU.STORE;
+
+        fetch(url, {
+            method: 'POST',
+            body: JSON.stringify({
+                "educationStudyId": id
+            })
+        })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (result) {
+            console.log(result.data);
+            _this.setState({isActive: !_this.state.isActive})
+        });
+
+
+    }
     componentDidMount() {
-        console.log(111);
         this.loadData();
     }
     render() {
         var _this = this;
-        var title = _this.state.artInfo.title;
         return(
             <div>
                 <header>
@@ -49,9 +70,9 @@ export default class EduDetails extends React.Component{
 
                 <div className="toper-tit">
                     <div className="container">
-                        <h1>{title}</h1>
+                        <h1>{_this.state.artInfo.serviceName}</h1>
                         <div className="mob-author clearfix">
-                            <span className="fl">20160507</span>
+                            <span className="fl">{_this.state.artInfo.createDate}</span>
                             <span className="fr share">
                                 <i className="icon iconfont">&#xe604;</i>
                             </span>
@@ -60,7 +81,7 @@ export default class EduDetails extends React.Component{
                             </span>
                             <span className="fr watch">
                                 <i className="icon iconfont">&#xe615;</i>
-                                111
+                                {_this.state.artInfo.clickNum}
                             </span>
                         </div>
                     </div>
@@ -69,9 +90,9 @@ export default class EduDetails extends React.Component{
                 <section className="section2">
                     <div className="container">
                         <h1>服务依据</h1>
-                        <p>xxxxxxxxxxxx</p>
+                        <p>{_this.state.artInfo.serviceBasis}</p>
                         <h1>服务对象</h1>
-                        <p>xxxxxxxxxxxxxxxxx</p>
+                        <p>{_this.state.artInfo.serviceObject}</p>
                     </div>
                 </section>
                 {this.props.children}

@@ -9,7 +9,7 @@ export default class Edu extends React.Component {
             <div>
                 <div className="toper">
                     <div className="sub-banner">
-                        <a href="javascript:history.back();">
+                        <a href="/">
                             <img src="img/arrow_left.png" alt=""/>
                         </a>
                         <img src="img/title_edu.png" alt="" />
