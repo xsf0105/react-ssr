@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/React WXhandicapped.iml" filepath="$PROJECT_DIR$/.idea/React WXhandicapped.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/react-spa.iml" filepath="$PROJECT_DIR$/.idea/react-spa.iml" />
     </modules>
   </component>
 </project>

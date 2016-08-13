@@ -54,10 +54,6 @@
   "author": "Allan Xu",
   "license": "MIT",
   "config": {
-    "ghooks": {
-      "pre-commit": "npm run lint",
-      "commit-msg": "npm run lint:msg"
-    },
     "validate-commit-msg": {
       "types": [
         "feat",

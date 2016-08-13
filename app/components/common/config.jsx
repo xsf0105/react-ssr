@@ -1,4 +1,4 @@
-var server_host =  'http://115.239.229.12:8020/';
+const server_host =  'http://115.239.229.12:8020/';
 module.exports = {
     SERVICE: {
             POLICY: {

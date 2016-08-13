@@ -29,7 +29,7 @@ $ cd <yourAppName>
 $ npm install
 ```
 
-Then, launch the boilerplate app.
+Then, launch the project app.
 
 ```bash
 $ npm start
