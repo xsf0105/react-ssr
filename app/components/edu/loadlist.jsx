@@ -58,23 +58,28 @@ export default class LoadList extends React.Component {
                 _this.loadList();
             }else{
                 _this.setState({bottomTxt: '到底儿了~'});
+
             }
         }
     }
+
     render() {
         var _this = this;
         var repoList = this.state.renderArr.map(function (repo,index) {
             return (
                 <li key={index}>
+
                     { index==0 || index==1 || index==2 ? <img className="hot-icon" src="img/hot.png" alt="" width="35" /> : null }
+
                     <Link to={{pathname:"/edu-details",query:{id:repo.id}}}>{repo.serviceName}</Link>
+
                 </li>
             );
         });
         return(
             <div className="list">
                 <ul>{repoList}</ul>
-                { _this.state.bottomTxt?<div className="loadmore">没有啦~</div>:null }
+                { _this.state.bottomTxt?<div className="loadmore">{_this.state.bottomTxt}</div>:null }
             </div>
         )
   }
