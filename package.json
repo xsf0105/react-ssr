@@ -1,10 +1,10 @@
 {
-  "name": "react-babel-webpack-boilerplate",
+  "name": "myreact-spa",
   "version": "1.2.2",
   "description": "",
   "main": "app/main.jsx",
   "scripts": {
-    "lint": "eslint 'app/**/*.@(js|jsx)'",
+    "lint": "eslint 'app/**/**/*.@(js|jsx)'",
     "lint:msg": "validate-commit-msg",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
@@ -54,10 +54,6 @@
   "author": "Allan Xu",
   "license": "MIT",
   "config": {
-    "ghooks": {
-      "pre-commit": "npm run lint",
-      "commit-msg": "npm run lint:msg"
-    },
     "validate-commit-msg": {
       "types": [
         "feat",

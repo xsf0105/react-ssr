@@ -6,7 +6,7 @@ This repo is a project for React-Babel-Webpack project.
 - 自主配置的开发环境
 - 采用ES6语法，组件化、模块化开发
 - 前端控制路由
-- Scss代替Css
+- Scss代替le Css
 - 自动打开、刷新浏览器
 
 - Equip with React, ES6 & Babel 6
@@ -29,7 +29,7 @@ $ cd <yourAppName>
 $ npm install
 ```
 
-Then, launch the boilerplate app.
+Then, launch the project app.
 
 ```bash
 $ npm start
