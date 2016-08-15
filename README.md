@@ -6,7 +6,7 @@ This repo is a project for React-Babel-Webpack project.
 - 自主配置的开发环境
 - 采用ES6语法，组件化、模块化开发
 - 前端控制路由
-- Scss代替le Css
+- Scss代替css
 - 自动打开、刷新浏览器
 
 - Equip with React, ES6 & Babel 6
@@ -24,7 +24,7 @@ This repo is a project for React-Babel-Webpack project.
 First, you should clone the repo and install the dependencies.
 
 ```bash
-$ git clone git@github.com:allan2coder/React-SPA-weixin.git <yourAppName>
+$ git clone git@github.com:allan2coder/react-spa.git
 $ cd <yourAppName>
 $ npm install
 ```
