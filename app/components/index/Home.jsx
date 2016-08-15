@@ -2,6 +2,8 @@ import React from 'react'
 import Slider from '../lib/Slider.jsx'
 import NavLink from '../lib/NavLink.jsx'
 
+//import './scss/main.scss'
+
 export default React.createClass({
   render() {
     return (
@@ -34,22 +36,22 @@ export default React.createClass({
 
             <div className="menu clearfix">
                 <div className="col3">
-                    <a href="policy.html">
-                        <img src="img/menu_policy.png" alt=""/>
-                            政策解读
-                    </a>
-                </div>
-                <div className="col3">
-                    <a href="">
-                        <img src="img/menu_guide.png" alt=""/>
-                            办证指南
-                    </a>
-                </div>
-                <div className="col3">
                     <NavLink to="/edu">
                         <img src="img/menu_edu.png" alt=""/>
                         教育助学
                     </NavLink>
+                </div>
+                <div className="col3">
+                    <a href="">
+                        <img src="img/menu_guide.png" alt=""/>
+                        办证指南
+                    </a>
+                </div>
+                <div className="col3">
+                    <a href="">
+                        <img src="img/menu_policy.png" alt=""/>
+                        政策解读
+                    </a>
                 </div>
                 <div className="col3">
                     <a href="">
@@ -64,7 +66,7 @@ export default React.createClass({
                     </a>
                 </div>
                 <div className="col3">
-                    <a href="labour-dir.html">
+                    <a href="">
                         <img src="img/menu_labour.png" alt=""/>
                             劳动就业
                     </a>

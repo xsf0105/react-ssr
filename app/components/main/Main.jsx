@@ -1,7 +1,16 @@
 import React from 'react'
 
+import './mine.css'
+
 export default React.createClass({
   render() {
-    return <div>About</div>
+    return (
+        <div>
+          <h2 className="news">
+            You're in
+            <p>Main Page now!</p>
+          </h2>
+        </div>
+    )
   }
 })

@@ -58,7 +58,6 @@ export default class LoadList extends React.Component {
                 _this.loadList();
             }else{
                 _this.setState({bottomTxt: '到底儿了~'});
-
             }
         }
     }
