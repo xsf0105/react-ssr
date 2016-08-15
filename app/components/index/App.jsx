@@ -31,6 +31,7 @@ export default React.createClass({
               </NavLink>
             </div>
           </footer>
+
           {this.props.children}
         </div>
     )

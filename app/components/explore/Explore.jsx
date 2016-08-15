@@ -1,39 +1,27 @@
 import React from 'react'
+import { render } from 'react-dom'
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import NavLink from '../lib/NavLink'
 
+import  './explore.css'
+const ACTIVE = { color: '#3E3D32' }
+
 export default React.createClass({
-  contextTypes: {
-    router: React.PropTypes.object
-  },
-
-  handleSubmit(event) {
-    event.preventDefault()
-    const userName = event.target.elements[0].value
-    const repo = event.target.elements[1].value
-    const path = `/repos/${userName}/${repo}`
-    this.context.router.push(path)
-  },
-
   render() {
     return (
-      <div>
-        <h2>Repos</h2>
-
-        <ul>
-          <li><NavLink to="/repos/reactjs/react-router">React Router</NavLink></li>
-          <li><NavLink to="/repos/facebook/react">React</NavLink></li>
-
-          <li>
-            <form onSubmit={this.handleSubmit}>
-              <input type="text" placeholder="userName"/> / {' '}
-              <input type="text" placeholder="repo"/>{' '}
-              <button type="submit">Go</button>
-            </form>
-          </li>
-        </ul>
-
+      <div className="explore">
+        <h2>Welcome to Export</h2>
+          <ul>
+              <li>
+                  <NavLink activeStyle={ACTIVE} to="/ChildPage1">page1 tab(菜单一)</NavLink>
+              </li>
+              <li>
+                  <NavLink activeStyle={ACTIVE} to="/ChildPage2">page2 tab(菜单二)</NavLink>
+              </li>
+          </ul>
         {this.props.children}
       </div>
     )
   }
 })
+

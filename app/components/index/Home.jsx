@@ -14,83 +14,80 @@ export default React.createClass({
                     <div>
                         <a href="">
                             <i className="icon iconfont">&#xe600;</i>
-                            在线挂号
+                            带薪如厕
                         </a>
                     </div>
                     <div>
                         <a href="">
                             <i className="icon iconfont">&#xe607;</i>
-                            爱心地图
+                            G20不放假
                         </a>
                     </div>
                     <div>
                         <a href="">
                             <i className="icon iconfont">&#xe60e;</i>
-                            公交出行
+                            公交上班
                         </a>
                     </div>
                 </div>
             </div>
-
             <div className="menu clearfix">
-                <div className="col3">
-                    <a href="policy.html">
-                        <img src="img/menu_policy.png" alt=""/>
-                            政策解读
-                    </a>
-                </div>
-                <div className="col3">
-                    <a href="">
-                        <img src="img/menu_guide.png" alt=""/>
-                            办证指南
-                    </a>
-                </div>
                 <div className="col3">
                     <NavLink to="/edu">
                         <img src="img/menu_edu.png" alt=""/>
-                        教育助学
+                        一年级画画
                     </NavLink>
                 </div>
                 <div className="col3">
                     <a href="">
+                        <img src="img/menu_guide.png" alt=""/>
+                        二年级跳舞
+                    </a>
+                </div>
+                <div className="col3">
+                    <a href="">
+                        <img src="img/menu_policy.png" alt=""/>
+                        三年级乒乓
+                    </a>
+                </div>
+                <div className="col3">
+                    <a href="">
                         <img src="img/menu_server.png" alt=""/>
-                            康复服务
+                        四年级篮球
                     </a>
                 </div>
                 <div className="col3">
                     <a href="">
                         <img src="img/menu_train.png" alt=""/>
-                            社会保障
+                        五年级国画
                     </a>
                 </div>
                 <div className="col3">
-                    <a href="labour-dir.html">
+                    <a href="">
                         <img src="img/menu_labour.png" alt=""/>
-                            劳动就业
+                        六年级毕业
                     </a>
                 </div>
                 <div className="col3">
                     <a href="">
                         <img src="img/menu_train.png" alt=""/>
-                            培训信息
+                        初中打架
                     </a>
                 </div>
                 <div className="col3">
                     <a href="">
                         <img src="img/menu_suggestion.png" alt=""/>
-                            建议咨询
+                        高中游戏
                     </a>
                 </div>
                 <div className="col3">
                     <a href="">
                         <img src="img/menu_more.png" alt=""/>
-                            更多
+                        大学干啥
                     </a>
                 </div>
             </div>
         </div>
-
-        
     )
   }
 })
