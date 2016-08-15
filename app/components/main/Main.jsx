@@ -7,8 +7,8 @@ export default React.createClass({
     return (
         <div>
           <h2 className="news">
-            You're in
-            <p>Main Page now!</p>
+              Now,
+            <p>You're in Main Page!</p>
           </h2>
         </div>
     )

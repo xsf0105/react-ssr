@@ -1,7 +1,5 @@
 import React from 'react'
 
-import  './news.css'
-
 export default React.createClass({
   render() {
     return (

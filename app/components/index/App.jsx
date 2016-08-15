@@ -5,7 +5,6 @@ export default React.createClass({
   render() {
     return (
         <div>
-
           <footer className="fixed-bottom clearfix">
             <div className="col4">
               <NavLink onlyActiveOnIndex to="/">
