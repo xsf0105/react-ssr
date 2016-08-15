@@ -8,7 +8,7 @@
     "lint:msg": "validate-commit-msg",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server --devtool eval --progress --hot --content-base app",
+    "start": "webpack-dev-server --colors --devtool eval --progress --hot --content-base app",
     "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js",
     "validate": "npm ls",
     "commit": "git cz",
