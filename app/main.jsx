@@ -6,6 +6,7 @@ import App from './components/index/App.jsx'
 import Home from './components/index/Home.jsx'
 import Main from './components/main/Main.jsx'
 import News from './components/news/News.jsx'
+
 import Edu from './components/edu/Edu.jsx'
 import EduDetails from './components/edu-details/EduDetails.jsx'
 
