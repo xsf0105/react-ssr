@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "babel-runtime": "6.x",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.22.0",
     "react": "15.x",
     "react-dom": "15.x",
     "react-router": "^2.6.1",
