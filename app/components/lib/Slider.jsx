@@ -6,12 +6,11 @@ export default React.createClass({
     var settings = {
         dots: true,
         infinite: true,
-        speed: 800,
+        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: true,
-        lazyLoad: true
+        autoplay: false
     };
     return (
         <Slider {...settings}>
