@@ -8,7 +8,7 @@ export default React.createClass({
       <div>
         <h2 className="news">
           Hi, guys!
-          <p>Welcome to New11s Page!</p>
+          <p>Welcome to News1 Page!</p>
         </h2>
       </div>
     )

@@ -9,17 +9,15 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var node_modules = path.resolve(__dirname, 'node_modules');
 
-
-
-
 module.exports = {
   devServer: {
-    historyApiFallback: true,
-    hot: true,
-    inline: true,
-    progress: true,
-    contentBase: './app',
-    port: 8080
+        historyApiFallback: true,
+        hot: true,
+        inline: true,
+        progress: true,
+        contentBase: './app',
+        host: '0.0.0.0',
+        port: 8080
   },
   entry: [
     'webpack/hot/dev-server',
@@ -34,43 +32,11 @@ module.exports = {
   module: {
     //加载器配置
     loaders:[
-       {
-         test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader'
-       },
-
-      {
-        test: /\.js[x]?$/,
-        loaders: ['babel-loader'],
-        exclude: path.resolve(__dirname, 'node_modules')
-      },
-      {
-        test: /\.(png|jpg)$/,
-        loader: 'url?limit=8192'
-      },
-      {
-        test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "url?limit=10000"
-      },
-      //
-      //{
-      //  test: /\.css/,
-      //  loader: ExtractTextPlugin.extract("style-loader", "css-loader")
-      //},
-      //{
-      //  test: /\.(png|jpg)$/,
-      //  loader: 'url?limit=8192'
-      //},
-      //{
-      //  test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
-      //  loader: "url?limit=10000"
-      //},
-      //
-      //{
-      //  test: /\.scss$/,include: path.resolve(__dirname, 'app'),exclude: /node_modules/, loader: 'style!css!sass?sourceMap'
-      //},
-      //{
-      //  test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, loader: 'babel-loader'
-      //},
+        {test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader'},
+        {test: /\.scss$/,include: path.resolve(__dirname, 'app'),exclude: /node_modules/, loader: 'style!css!sass?sourceMap'},
+        {test: /\.js[x]?$/, loaders: ['babel-loader'], exclude: path.resolve(__dirname, 'node_modules')},
+        {test: /\.(png|jpg)$/, loader: 'url?limit=8192'},
+        {test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000", /*loader: 'url-loader?limit=50000&name=[path][name].[ext]'*/},
     ]
   },
   //其它解决方案配置
@@ -90,6 +56,6 @@ module.exports = {
     new ExtractTextPlugin("main.css", {
       allChunks: true,
       disable: false
-    }),
+    })
   ]
 };

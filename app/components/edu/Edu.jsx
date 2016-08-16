@@ -14,7 +14,9 @@ export default class Edu extends React.Component {
                         <img src="img/title_edu.png" alt="" />
                     </div>
                 </div>
+
                 <Search></Search>
+
                 <LoadList></LoadList>
             </div>
         )
