@@ -1,6 +1,16 @@
 var webpack = require('webpack');
 var path = require('path');
+// 编译后自动打开浏览器
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+
+// 产出html模板
+var HtmlWebpackPlugin = require("html-webpack-plugin");
+// 单独样式文件
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var node_modules = path.resolve(__dirname, 'node_modules');
+
+
+
 
 module.exports = {
   devServer: {
@@ -24,27 +34,46 @@ module.exports = {
   module: {
     //加载器配置
     loaders:[
-      { test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader' },
-      { test: /\.scss$/,include: path.resolve(__dirname, 'app'),exclude: /node_modules/, loader: 'style!css!sass?sourceMap'},
-      { test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, loader: 'babel-loader' },
+      // {
+      //   test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader'
+      // },
+      {
+        test: /\.css/,
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url?limit=8192'
+      },
+      {
+        test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "url?limit=10000"
+      },
+
+      {
+        test: /\.scss$/,include: path.resolve(__dirname, 'app'),exclude: /node_modules/, loader: 'style!css!sass?sourceMap'
+      },
+      {
+        test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, loader: 'babel-loader'
+      },
     ]
   },
   //其它解决方案配置
   resolve: {
     extensions: ['', '.js', '.jsx'],
+    // 提高webpack搜索的速度
+    alias: { }
   },
+  devtool: 'source-map',
+  'display-error-details': true,
+  // 使用externals可以将react分离，然后用<script>单独将react引入
   //插件项
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+    new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
+    new ExtractTextPlugin("main.css", {
+      allChunks: true,
+      disable: false
+    }),
   ]
 };
-
-/*
-*
-$ webpack // 最基本的启动webpack方法
-$ webpack -w // 提供watch方法，实时进行打包更新
-$ webpack -p // 对打包后的文件进行压缩，提供production
-$ webpack -d // 提供source map，方便调试。
-*
-*/

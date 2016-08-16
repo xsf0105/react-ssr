@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './mine.css'
+import './main.css'
 
 export default React.createClass({
   render() {

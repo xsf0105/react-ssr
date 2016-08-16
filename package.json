@@ -1,5 +1,5 @@
 {
-  "name": "myreact-spa",
+  "name": "react-spa",
   "version": "1.2.2",
   "description": "",
   "main": "app/main.jsx",
@@ -7,7 +7,7 @@
     "lint": "eslint 'app/**/**/*.@(js|jsx)'",
     "lint:msg": "validate-commit-msg",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "./node_modules/.bin/webpack --progress --colors --config webpack.prod.config.js",
     "start": "webpack-dev-server --colors --devtool eval --progress --hot --content-base app",
     "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js",
     "validate": "npm ls",
