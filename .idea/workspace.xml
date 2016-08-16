@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9075e8c-edd3-4487-a8c0-7c22fbdd0552" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/explore/ExplorePage1.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/explore/ExplorePage2.jsx" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/news/news.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/explore/Explore.jsx" afterPath="$PROJECT_DIR$/app/components/explore/Explore.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/explore/explore.css" afterPath="$PROJECT_DIR$/app/components/explore/explore.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/index/App.jsx" afterPath="$PROJECT_DIR$/app/components/index/App.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/index/Home.jsx" afterPath="$PROJECT_DIR$/app/components/index/Home.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/main/Main.jsx" afterPath="$PROJECT_DIR$/app/components/main/Main.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/news/News.jsx" afterPath="$PROJECT_DIR$/app/components/news/News.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main.jsx" afterPath="$PROJECT_DIR$/app/main.jsx" />
-    </list>
+    <list default="true" id="c9075e8c-edd3-4487-a8c0-7c22fbdd0552" name="Default" comment="" />
     <ignored path="React WXhandicapped.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
