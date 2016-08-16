@@ -34,12 +34,14 @@ module.exports = {
   module: {
     //加载器配置
     loaders:[
-      // {
-      //   test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader'
-      // },
+       {
+         test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader'
+       },
+
       {
-        test: /\.css/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+        test: /\.js[x]?$/,
+        loaders: ['babel-loader'],
+        exclude: path.resolve(__dirname, 'node_modules')
       },
       {
         test: /\.(png|jpg)$/,
@@ -49,13 +51,26 @@ module.exports = {
         test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
         loader: "url?limit=10000"
       },
-
-      {
-        test: /\.scss$/,include: path.resolve(__dirname, 'app'),exclude: /node_modules/, loader: 'style!css!sass?sourceMap'
-      },
-      {
-        test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, loader: 'babel-loader'
-      },
+      //
+      //{
+      //  test: /\.css/,
+      //  loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+      //},
+      //{
+      //  test: /\.(png|jpg)$/,
+      //  loader: 'url?limit=8192'
+      //},
+      //{
+      //  test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+      //  loader: "url?limit=10000"
+      //},
+      //
+      //{
+      //  test: /\.scss$/,include: path.resolve(__dirname, 'app'),exclude: /node_modules/, loader: 'style!css!sass?sourceMap'
+      //},
+      //{
+      //  test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, loader: 'babel-loader'
+      //},
     ]
   },
   //其它解决方案配置
@@ -67,6 +82,7 @@ module.exports = {
   devtool: 'source-map',
   'display-error-details': true,
   // 使用externals可以将react分离，然后用<script>单独将react引入
+  externals: [],
   //插件项
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
