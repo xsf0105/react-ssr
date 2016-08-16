@@ -1,5 +1,6 @@
 ## This repo is a project for React-Babel-Webpack project. 
-- No b
+
+- No bullshit,just simple!
 
 
 ## Features
