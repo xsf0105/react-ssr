@@ -1,6 +1,4 @@
-# Example React.js+webpack+ES6
-## This repo is a project for React-Babel-Webpack project. 
-
+# Example React-Babel-Webpack
 - No bullshit, just simple!
 
 ![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/react%20spa1.png)
