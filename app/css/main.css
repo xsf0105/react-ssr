@@ -404,7 +404,8 @@ header {
     background: url(../img/arrow_right_gray.png) no-repeat center right 10px;
     background-size: 10px;
     text-overflow: ellipsis;
-    overflow: hidden; }
+    overflow: hidden;
+  font-size: 12px;}
   .list li:last-child a {
     border-bottom: none; }
 

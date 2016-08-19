@@ -143,7 +143,7 @@ $shadow: 0px 1px 2px #d1d1d1;
 .sub-banner{
   //height: 98px;
   min-height: 98px;
-  background: $baseColor url("../img/banner_bg1.svg") repeat center;
+  //background: $baseColor url("../img/banner_bg1.svg") repeat center;
   background-size: 35%;
   padding-top: 20px;
   position: relative;
@@ -161,7 +161,7 @@ $shadow: 0px 1px 2px #d1d1d1;
   }
 }
 .sub-banner2{
-  background: $baseColor url("../img/banner_bg2.svg") repeat center;
+  //background: $baseColor url("../img/banner_bg2.svg") repeat center;
   background-size: 35%;
 }
 .toper-nav{
@@ -183,6 +183,7 @@ $shadow: 0px 1px 2px #d1d1d1;
     border-right: none;
   }
 }
+
 .toper-nav2 .col-nav a{
   padding-top: 12px;
   &.cur{
@@ -489,10 +490,11 @@ header{
       height: 50px;
       line-height: 50px;
       border-bottom: $baseborder;
-      background: url(../img/arrow_right_gray.png) no-repeat center right 10px;
+      //background: url(../img/arrow_right_gray.png) no-repeat center right 10px;
       background-size: 10px;
       text-overflow: ellipsis;
       overflow:hidden;
+      font-size: 12px;
     }
   }
   li:last-child a{
@@ -793,13 +795,6 @@ select{
 .btn-primary{
   background: #08ba6d;
 }
-
-/* TEST STYLE */
-.news{
-  text-align: center;
-  font-size: 36px;
-}
-
 
 
 

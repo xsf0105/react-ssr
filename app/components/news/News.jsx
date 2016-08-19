@@ -1,6 +1,6 @@
 import React from 'react'
 
-import  './news.css'
+import  './news.scss'
 
 export default React.createClass({
   render() {

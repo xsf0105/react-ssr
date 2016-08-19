@@ -32,8 +32,10 @@ module.exports = {
   module: {
     //加载器配置
     loaders:[
+        
+        { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
+
         {test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader'},
-        {test: /\.scss$/,include: path.resolve(__dirname, 'app'),exclude: /node_modules/, loader: 'style!css!sass?sourceMap'},
         {test: /\.js[x]?$/, loaders: ['babel-loader'], exclude: path.resolve(__dirname, 'node_modules')},
         {test: /\.(png|jpg)$/, loader: 'url?limit=8192'},
         {test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000", /*loader: 'url-loader?limit=50000&name=[path][name].[ext]'*/},

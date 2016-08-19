@@ -16,6 +16,8 @@ import ExplorePage2 from './components/explore/ExplorePage2.jsx'
 
 /* 样式文件加载 */
 import './css/reset.css'
+import './scss/common.scss'
+import './scss/main.scss'
 
 render((
     <Router history={browserHistory}>

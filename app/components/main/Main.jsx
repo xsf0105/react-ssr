@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './main.css'
-
 export default React.createClass({
   render() {
     return (
