@@ -2,8 +2,10 @@
 - No bullshit, just simple!
 - If you have any questions, you can cantact by QQ：416175716
 - 其他单页应用：
-- [vue.js]：(https://github.com/allan2coder/Vue-SPA);       
-- [angularjs]: (https://github.com/allan2coder/AngularJs-SPA)
+```bash
+  [vue.js]：(https://github.com/allan2coder/Vue-SPA);       
+  [angularjs]: (https://github.com/allan2coder/AngularJs-SPA)
+```
 
 ![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/react%20spa1.png)
 
