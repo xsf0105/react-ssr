@@ -1,7 +1,7 @@
-# Example React-Babel-Webpack(- 如果对你有用右上角点个star吧 - -)
+# Example React-Babel-Webpack
 - No bullshit, just simple!
 - If you have any questions, you can cantact by qq：416175716
-
+- (如果对你有用右上角点个star吧 - -)
 
 ![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/react%20spa1.png)
 
