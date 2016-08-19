@@ -1,5 +1,10 @@
-This repo is a project for React-Babel-Webpack project. 
+# Example React-Babel-Webpack
+- No bullshit, just simple!
+- If you have any questions, you can cantact by QQ：416175716
+- 其他单页应用：
+  vue.js：https://github.com/allan2coder/Vue-SPA             angularjs: https://github.com/allan2coder/AngularJs-SPA
 
+![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/react%20spa1.png)
 
 ## Features
 
@@ -24,7 +29,7 @@ This repo is a project for React-Babel-Webpack project.
 First, you should clone the repo and install the dependencies.
 
 ```bash
-$ git clone git@github.com:allan2coder/react-spa.git
+$ git clone git@github.com:allan2coder/react-spa.git <yourAppName>
 $ cd <yourAppName>
 $ npm install
 ```

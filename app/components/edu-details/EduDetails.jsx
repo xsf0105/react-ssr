@@ -3,7 +3,7 @@ import service from '../common/config.jsx'
 import utilities from '../common/Utilities.jsx'
 
 var id = utilities.getParameterByName('id');
-console.log(id);
+console.log('ID is',id);
 
 export default class EduDetails extends React.Component{
     constructor() {
@@ -12,7 +12,7 @@ export default class EduDetails extends React.Component{
             artInfo: {},
             isActive: false,
             isShare: false,
-        };
+    };
     }
     loadData() {
         var _this = this;

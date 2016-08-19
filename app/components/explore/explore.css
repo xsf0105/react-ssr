@@ -7,6 +7,10 @@ h2{
     color: #3E3D32;
     padding-top: 2em;
 }
+.explore p{
+    padding: 0 10px;
+    text-align: left;
+}
 .explore a{
     background: #08ba6d;
     padding: 2px 10px;
