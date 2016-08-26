@@ -29,13 +29,14 @@ module.exports = {
           loaders: ['babel-loader'],
           exclude: path.resolve(__dirname, 'node_modules')
         },
+        { 
+          test: /\.scss$/,
+          include: path.resolve(__dirname, 'app'), 
+          loader: 'style!css!sass?sourceMap'
+        },
         {
           test: /\.css/,
           loader: ExtractTextPlugin.extract("style-loader", "css-loader")
-        },
-        {
-          test: /\.less/,
-          loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
         },
         {
           test: /\.(png|jpg)$/,
