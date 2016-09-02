@@ -22,6 +22,7 @@
     "react-dom": "15.x",
     "react-router": "^2.6.1",
     "react-slick": "^0.12.2",
+    "url-loader": "^0.5.7",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
