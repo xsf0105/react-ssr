@@ -4,7 +4,7 @@
 - 其他单页应用：
   vue.js：https://github.com/allan2coder/Vue-SPA             angularjs: https://github.com/allan2coder/AngularJs-SPA
 
-![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/react%20spa1.png)
+![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/jdfw.gif)
 
 ## Features
 
