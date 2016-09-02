@@ -12,19 +12,19 @@ export default React.createClass({
                 </div>
                 <div className="top-nav clearfix">
                     <div>
-                        <a href="">
+                        <a href="javascript:void(0);">
                             <i className="icon iconfont">&#xe600;</i>
                             带薪如厕
                         </a>
                     </div>
                     <div>
-                        <a href="">
+                        <a href="javascript:void(0);">
                             <i className="icon iconfont">&#xe607;</i>
                             G20不放假
                         </a>
                     </div>
                     <div>
-                        <a href="">
+                        <a href="javascript:void(0);">
                             <i className="icon iconfont">&#xe60e;</i>
                             公交上班
                         </a>
@@ -39,49 +39,49 @@ export default React.createClass({
                     </NavLink>
                 </div>
                 <div className="col3">
-                    <a href="">
+                    <a href="javascript:void(0);">
                         <img src="img/menu_guide.png" alt=""/>
                         二年级跳舞
                     </a>
                 </div>
                 <div className="col3">
-                    <a href="">
+                    <a href="javascript:void(0);">
                         <img src="img/menu_policy.png" alt=""/>
                         三年级乒乓
                     </a>
                 </div>
                 <div className="col3">
-                    <a href="">
+                    <a href="javascript:void(0);">
                         <img src="img/menu_server.png" alt=""/>
                         四年级篮球
                     </a>
                 </div>
                 <div className="col3">
-                    <a href="">
+                    <a href="javascript:void(0);">
                         <img src="img/menu_train.png" alt=""/>
                         五年级国画
                     </a>
                 </div>
                 <div className="col3">
-                    <a href="">
+                    <a href="javascript:void(0);">
                         <img src="img/menu_labour.png" alt=""/>
                         六年级毕业
                     </a>
                 </div>
                 <div className="col3">
-                    <a href="">
+                    <a href="javascript:void(0);">
                         <img src="img/menu_train.png" alt=""/>
                         初中打架
                     </a>
                 </div>
                 <div className="col3">
-                    <a href="">
+                    <a href="javascript:void(0);">
                         <img src="img/menu_suggestion.png" alt=""/>
                         高中游戏
                     </a>
                 </div>
                 <div className="col3">
-                    <a href="">
+                    <a href="javascript:void(0);">
                         <img src="img/menu_more.png" alt=""/>
                         大学干啥
                     </a>
