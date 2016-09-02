@@ -2,9 +2,6 @@ import React from 'react'
 import service from '../common/config.jsx'
 import utilities from '../common/Utilities.jsx'
 
-var id = utilities.getParameterByName('id');
-console.log('ID is',id);
-
 export default class EduDetails extends React.Component{
     constructor() {
         super();
@@ -12,14 +9,14 @@ export default class EduDetails extends React.Component{
             artInfo: {},
             isActive: false,
             isShare: false,
-    };
+        };
     }
     loadData() {
         var _this = this;
         fetch(service.SERVICE.EDU.DETAILS, {
                 method: 'POST',
                 body: JSON.stringify({
-                    "id": id
+                    "id": utilities.getParameterByName('id')
                 })
             })
             .then(function (response) {
@@ -87,7 +84,7 @@ export default class EduDetails extends React.Component{
                     </div>
                 </div>
 
-                <section className="section2">
+                <section className="section">
                     <div className="container">
                         <h1>服务依据</h1>
                         <p>{_this.state.artInfo.serviceBasis}</p>
