@@ -57,7 +57,7 @@
     "es6",
     "web app"
   ],
-  "author": "AllanXu",
+  "author": "Allan Xu",
   "license": "MIT",
   "config": {
     "validate-commit-msg": {
