@@ -1,6 +1,6 @@
 {
   "name": "react-spa",
-  "version": "1.2.2",
+  "version": "1.0.0",
   "description": "",
   "main": "app/main.jsx",
   "scripts": {
