@@ -2,7 +2,8 @@
 - No bullshit, just simple!
 - If you have any questions, you can cantact by QQ：416175716
 - Other SPA(其他单页应用)：
-  vue.js：https://github.com/allan2coder/Vue-SPA             angularjs: https://github.com/allan2coder/AngularJs-SPA
+  <br/>vue.js：https://github.com/allan2coder/Vue-SPA
+  <br/>angularjs: https://github.com/allan2coder/AngularJs-SPA
 
 ![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/jdfw.gif)
 
