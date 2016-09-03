@@ -44,7 +44,10 @@ You should see a new browser tap opening and a page of "index.html" in http://12
 
 From there, you start to develop your own code in the `app` directory. When you finish coding, use `npm run build` or `npm run deploy` to build the static files.
 
-When committing your code, you should use [AngularJS's commit message convention](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines). Otherwise, the repo will throw an error. If you use `npm run commit` instead of `git commit`, the command will help you to produce a formatted commit message.
+### Formatted commit message
+
+When committing your code, you can use [AngularJS's commit message convention](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines).
+If you use `npm run commit` or `git cz` instead of `git commit`, the command will help you to produce a formatted commit message.
 
 ### Reference Articles
 * [ECMAScript 6入门](http://es6.ruanyifeng.com/)
