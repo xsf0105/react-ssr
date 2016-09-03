@@ -1,12 +1,11 @@
 var webpack = require('webpack');
 var path = require('path');
+
 // 编译后自动打开浏览器
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
-// 产出html模板
-var HtmlWebpackPlugin = require("html-webpack-plugin");
 // 单独样式文件
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var node_modules = path.resolve(__dirname, 'node_modules');
 
 module.exports = {
@@ -32,13 +31,11 @@ module.exports = {
   module: {
     //加载器配置
     loaders:[
-        
         { test: /\.scss$/,include: path.resolve(__dirname, 'app'), loader: 'style!css!sass?sourceMap'},
-
         {test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader'},
-        {test: /\.js[x]?$/, loaders: ['babel-loader'], exclude: path.resolve(__dirname, 'node_modules')},
+        {test: /\.js[x]?$/, loaders: ['babel-loader'], exclude: path.resolve(__dirname, node_modules)},
         {test: /\.(png|jpg)$/, loader: 'url?limit=8192'},
-        {test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000",
+        {test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000',
             /*loader: 'url-loader?limit=50000&name=[path][name].[ext]'*/},
     ]
   },
@@ -56,7 +53,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
-    new ExtractTextPlugin("main.css", {
+    new ExtractTextPlugin('main.css', {
       allChunks: true,
       disable: false
     })
