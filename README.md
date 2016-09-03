@@ -16,7 +16,7 @@
 - 自动打开、刷新浏览器
 
 - Equip with React, ES6 & Babel 6
-- Lint with ESlint and Airbnb's style sheet.
+- Lint with JSHint.
 - Build with Webpack
 - Support [hot module replacement](https://webpack.github.io/docs/hot-module-replacement.html)
 - Auto Open a new browser tab when Webpack loads, and reload the page when you modified the code
@@ -48,6 +48,16 @@ From there, you start to develop your own code in the `app` directory. When you 
 
 When committing your code, you can use [AngularJS's commit message convention](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines).
 If you use `npm run commit` or `git cz` instead of `git commit`, the command will help you to produce a formatted commit message.
+
+### JSHint
+
+```bash
+$ jshint myfile.js
+myfile.js: line 10, col 39, Octal literals are not allowed in strict mode.
+
+1 error
+```
+
 
 ### Reference Articles
 * [ECMAScript 6入门](http://es6.ruanyifeng.com/)
