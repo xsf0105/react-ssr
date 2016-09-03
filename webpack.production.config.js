@@ -18,10 +18,19 @@ module.exports = {
       { test: /\.scss$/,include: path.resolve(__dirname, 'app'), loader: 'style!css!sass?sourceMap'},
       { test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader' },
       { test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, loader: 'babel-loader' },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url?limit=8192'
+      },
+      {
+        test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "url?limit=10000"
+      }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js', '.jsx', '.json'],
+    alias: {}
   },
   plugins: [
     new webpack.DefinePlugin({
