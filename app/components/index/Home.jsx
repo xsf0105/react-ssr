@@ -34,55 +34,55 @@ export default React.createClass({
             <div className="menu clearfix">
                 <div className="col3">
                     <NavLink to="/edu">
-                        <img src="img/menu_edu.png" alt=""/>
+                        <img src={require('../../img/menu_edu.png')}/>
                         一年级画画
                     </NavLink>
                 </div>
                 <div className="col3">
                     <a href="javascript:void(0);">
-                        <img src="img/menu_guide.png" alt=""/>
+                        <img src={require('../../img/menu_safaguard.png')}/>
                         二年级跳舞
                     </a>
                 </div>
                 <div className="col3">
                     <a href="javascript:void(0);">
-                        <img src="img/menu_policy.png" alt=""/>
+                        <img src={require('../../img/menu_policy.png')}/>
                         三年级乒乓
                     </a>
                 </div>
                 <div className="col3">
                     <a href="javascript:void(0);">
-                        <img src="img/menu_server.png" alt=""/>
+                        <img src={require('../../img/menu_server.png')}/>
                         四年级篮球
                     </a>
                 </div>
                 <div className="col3">
                     <a href="javascript:void(0);">
-                        <img src="img/menu_train.png" alt=""/>
+                        <img src={require('../../img/menu_train.png')}/>
                         五年级国画
                     </a>
                 </div>
                 <div className="col3">
                     <a href="javascript:void(0);">
-                        <img src="img/menu_labour.png" alt=""/>
+                        <img src={require('../../img/menu_labour.png')}/>
                         六年级毕业
                     </a>
                 </div>
                 <div className="col3">
                     <a href="javascript:void(0);">
-                        <img src="img/menu_train.png" alt=""/>
+                        <img src={require('../../img/menu_train.png')}/>
                         初中打架
                     </a>
                 </div>
                 <div className="col3">
                     <a href="javascript:void(0);">
-                        <img src="img/menu_suggestion.png" alt=""/>
+                        <img src={require('../../img/menu_suggestion.png')}/>
                         高中游戏
                     </a>
                 </div>
                 <div className="col3">
                     <a href="javascript:void(0);">
-                        <img src="img/menu_more.png" alt=""/>
+                        <img src={require('../../img/menu_more.png')}/>
                         大学干啥
                     </a>
                 </div>
