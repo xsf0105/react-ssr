@@ -68,7 +68,7 @@ export default class LoadList extends React.Component {
             return (
                 <li key={index}>
 
-                    { index==0 || index==1 || index==2 ? <img className="hot-icon" src="img/hot.png" alt="" width="35" /> : null }
+                    { index==0 || index==1 || index==2 ? <img className="hot-icon" src={require('../../img/hot.png')} alt="" width="35" /> : null }
 
                     <Link to={{pathname:"/edu-details",query:{id:repo.id}}}>{repo.serviceName}</Link>
 

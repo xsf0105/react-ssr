@@ -60,7 +60,7 @@ export default class EduDetails extends React.Component{
             <div>
                 <header>
                     <a className="back" href="javascript:window.history.back();">
-                        <img src="../img/arrow_left.png" alt=""/>
+                        <img src={require('../../img/arrow_left.png')} alt=""/>
                     </a>
                     <h4>教育详情</h4>
                 </header>
@@ -83,7 +83,6 @@ export default class EduDetails extends React.Component{
                         </div>
                     </div>
                 </div>
-
                 <section className="section">
                     <div className="container">
                         <h1>服务依据</h1>

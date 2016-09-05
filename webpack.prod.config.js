@@ -39,13 +39,14 @@ module.exports = {
           loader: ExtractTextPlugin.extract("style-loader", "css-loader")
         },
         {
-          test: /\.(png|jpg)$/,
+          test: /\.(png|jpg|gif)$/,
           loader: 'url?limit=8192'
         },
-        {
-          test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
-          loader: "url?limit=10000"
-        }
+          {
+              test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+              loader : 'file-loader'
+          }
+
       ]
     },
     plugins: [
