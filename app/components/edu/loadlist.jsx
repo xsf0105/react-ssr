@@ -61,7 +61,6 @@ export default class LoadList extends React.Component {
             }
         }
     }
-
     render() {
         var _this = this;
         var repoList = this.state.renderArr.map(function (repo,index) {
