@@ -1,4 +1,5 @@
 import React from 'react'
+import { createStore } from 'redux';
 
 import  './news.scss'
 
