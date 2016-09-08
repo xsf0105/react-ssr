@@ -29,7 +29,7 @@
 First, you should clone the repo and install the dependencies.
 
 ```bash
-$ git clone git@github.com:allan2coder/react-spa.git <yourAppName>
+$ git clone https://github.com/allan2coder/React-SPA-Tutorial.git <yourAppName>
 $ cd <yourAppName>
 $ npm install
 ```
