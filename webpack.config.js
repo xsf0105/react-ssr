@@ -35,7 +35,7 @@ module.exports = {
         {test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader'},
         {test: /\.js[x]?$/, loaders: ['babel-loader'], exclude: path.resolve(__dirname, node_modules)},
         {test: /\.(png|jpg|gif)$/, loader: 'url?limit=8192'},
-        {test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,loader : 'file-loader'}
+        {test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,loader: 'file-loader'}
     ]
   },
   //其它解决方案配置
