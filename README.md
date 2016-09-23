@@ -6,7 +6,7 @@
     
 - Other SPA(其他单页应用)：
   <br/>vue.js：https://github.com/allan2coder/Vue-SPA
-  <br/>angularjs: https://github.com/allan2coder/AngularJs-SPA
+  <br/>angularjs 1.x: https://github.com/allan2coder/AngularJs-SPA
 
 ![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/jdfw.gif)
 
@@ -60,6 +60,9 @@ myfile.js: line 10, col 39, Octal literals are not allowed in strict mode.
 
 1 error
 ```
+
+### FAQ
+Checking the node version, when you have a problem with running npm start. And updata your node to high version.
 
 
 ### Reference Articles
