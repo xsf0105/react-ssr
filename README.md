@@ -6,7 +6,7 @@
     
 - Other SPA(其他单页应用)：
   <br/>vue.js：https://github.com/allan2coder/Vue-SPA
-  <br/>angularjs 1.x: https://github.com/allan2coder/AngularJs-SPA
+  <br/>angularjs 2.x: https://github.com/allan2coder/angular2-router-starter
 
 ![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/jdfw.gif)
 
