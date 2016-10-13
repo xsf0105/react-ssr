@@ -1,9 +1,8 @@
 # Example React-Babel-Webpack
 - No bullshit, just simple!
 - If you have any questions, you can cantact by 424073859（前端交流群）
+- 微信应用号(小程序)开发资源QQ群 473362324   https://github.com/allan2coder/weixinApp
 
--微信应用号(小程序)开发资源QQ群 473362324   https://github.com/allan2coder/weixinApp
-    
 - Other SPA(其他单页应用)：
   <br/>vue.js：https://github.com/allan2coder/Vue-SPA
   <br/>angularjs 2.x: https://github.com/allan2coder/angular2-router-starter
