@@ -2,9 +2,10 @@
 - No bullshit, just simple!
 - If you have any questions, you can cantact by 424073859（前端交流群）
 
-- Other SPA(其他单页应用)：
-  <br/>vue.js：https://github.com/allan2coder/Vue-SPA
-  <br/>angularjs 2.x: https://github.com/allan2coder/angular2-SPA
+### Other SPA(其他单页)
+- [vue1.x](https://github.com/allan2coder/Vue-SPA)
+- [vue2.x](https://github.com/allan2coder/Vue2-SPA) :fire: :fire: :fire:
+- [angularjs 2.x](https://github.com/allan2coder/angular2-SPA)
 
 ![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/jdfw.gif)
 
