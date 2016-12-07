@@ -4,8 +4,8 @@
 - If you have any questions, cantact my qq 424073859（前端交流群）
 
 ### Other SPA(其他单页)
-- [vue1.x](https://github.com/allan2coder/Vue-SPA)
-- [vue2.x](https://github.com/allan2coder/Vue2-SPA) :fire: :fire: :fire:
+- [vue2.x 小项目这个就够了！](https://github.com/allan2coder/VUE2-SPA-Tutorial)
+- [vue2.x 语法检测单元测试！](https://github.com/allan2coder/Vue2-SPA) :fire: :fire: :fire:
 - [angularjs 2.x](https://github.com/allan2coder/angular2-SPA)
 
 ![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/jdfw.gif)
