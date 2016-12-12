@@ -65,7 +65,7 @@ myfile.js: line 10, col 39, Octal literals are not allowed in strict mode.
 Checking the node version, when you have a problem with running npm start. And updata your node to high version.
 
 ## 有没有人捐助让我感受下世界的美好 (；′⌒`)
-#### 向已经捐过钱大佬表示感谢
+#### 向已经捐过钱大佬表示感谢,已累计获得610元、谢谢！
 ![image](https://raw.githubusercontent.com/allan2coder/weixinApp/master/image/donate.jpg)
 
 
