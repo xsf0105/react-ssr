@@ -1,7 +1,6 @@
-# Example React-Babel-Webpack
+# Example React-SPA-Tutorial
 
 - No bullshit, just simple!
-- If you have any questions, cantact my qq 424073859（前端交流群）
 
 ### Other Progect
 - [vue2.x](https://github.com/allan2coder/VUE2-SPA-Tutorial)
@@ -56,8 +55,8 @@ myfile.js: line 10, col 39, Octal literals are not allowed in strict mode.
 ### FAQ
 Checking the node version, when you have a problem with running npm start. And updata your node to high version.
 
-## Thanks to the generous sponsorship
-#### 向已经捐过钱大佬表示感谢,已累计获得610元、谢谢！
+## Thanks to donation
+#### 已累计获得610元,向已经捐过钱大佬表示感谢！
 ![image](https://raw.githubusercontent.com/allan2coder/weixinApp/master/image/donate.jpg)
 
 
@@ -71,7 +70,7 @@ Checking the node version, when you have a problem with running npm start. And u
 * [webpack 的 demos](http://zhizhi.betahouse.us/2015/09/27/yi-webpackde-demos/)
 * [webpack 教科书式入门教程](https://segmentfault.com/a/1190000005022872)
 * [Webpack傻瓜指南（二）开发和部署技巧](https://zhuanlan.zhihu.com/p/20397902)
-* [传统 Ajax 已死，Fetch 永生](http://www.jianshu.com/p/THLARe#)
+* [Fetch](http://www.jianshu.com/p/THLARe#)
 * [Fetch API](https://github.github.io/fetch/)
 * [JavaScript教程](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000)
 * [JS中的call、apply、bind方法](http://www.tuicool.com/articles/EVF3Eb)
@@ -81,4 +80,4 @@ Checking the node version, when you have a problem with running npm start. And u
 ## License
 
 MIT
-# React-SPA-weixin
+# React-SPA-Tutorial
