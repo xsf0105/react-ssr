@@ -3,21 +3,13 @@
 - No bullshit, just simple!
 - If you have any questions, cantact my qq 424073859（前端交流群）
 
-### Other SPA(其他单页)
-- [vue2.x 小项目这个就够了！](https://github.com/allan2coder/VUE2-SPA-Tutorial)
-- [vue2.x 语法检测单元测试！](https://github.com/allan2coder/Vue2-SPA) :fire: :fire: :fire:
-- [Angularjs 2.x](https://github.com/allan2coder/Angular2-SPA)
+### Other Progect
+- [vue2.x](https://github.com/allan2coder/VUE2-SPA-Tutorial)
+- [Angular2.x](https://github.com/allan2coder/Angular2-SPA)
 
 ![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/jdfw.gif)
 
 ## Features
-
-- 自主配置的开发环境
-- 采用ES6语法，组件化、模块化开发
-- 前端控制路由
-- Scss代替css
-- 自动打开、刷新浏览器
-
 - Equip with React, ES6 & Babel 6
 - Lint with JSHint.
 - Build with Webpack
@@ -64,7 +56,7 @@ myfile.js: line 10, col 39, Octal literals are not allowed in strict mode.
 ### FAQ
 Checking the node version, when you have a problem with running npm start. And updata your node to high version.
 
-## 有没有人捐助让我感受下世界的美好 (；′⌒`)
+## Thanks to the generous sponsorship
 #### 向已经捐过钱大佬表示感谢,已累计获得610元、谢谢！
 ![image](https://raw.githubusercontent.com/allan2coder/weixinApp/master/image/donate.jpg)
 
