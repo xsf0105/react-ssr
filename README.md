@@ -1,4 +1,4 @@
-# Example React-SPA-Tutorial
+# React-SPA-Tutorial
 
 - No bullshit, just simple!
 
