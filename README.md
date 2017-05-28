@@ -6,7 +6,11 @@
 - [vue2.x](https://github.com/allan2coder/VUE2-SPA-Tutorial)
 - [Angular2.x](https://github.com/allan2coder/Angular2-SPA)
 
-![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/jdfw.gif)
+![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/3.png)
+
+![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/2.png)
+
+![image](https://raw.githubusercontent.com/allan2coder/react-spa/master/screenshots/1.png)
 
 ## Features
 - Equip with React, ES6 & Babel 6
