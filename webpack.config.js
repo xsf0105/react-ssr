@@ -16,11 +16,11 @@ module.exports = {
         progress: true,
         contentBase: './app',
         host: '0.0.0.0',
-        port: 8080
+        port: 3000
   },
   entry: [
     'webpack/hot/dev-server',
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-dev-server/client?http://localhost:3000',
     path.resolve(__dirname, 'app/main.jsx')
   ],
   output: {
@@ -51,7 +51,7 @@ module.exports = {
   //插件项
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
+    new OpenBrowserPlugin({ url: 'http://localhost:3000' }),
     new ExtractTextPlugin('main.css', {
       allChunks: true,
       disable: false

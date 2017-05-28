@@ -195,14 +195,6 @@ $shadow: 0px 1px 2px #d1d1d1;
   }
 }
 
-/* load more */
-.loadmore{
-  text-align: center;
-  background: #efefef;
-  line-height: 30px;
-}
-
-
 /* edu details page */
 header{
   background: $baseColor;
@@ -243,41 +235,17 @@ header{
     text-indent: 25px;
   }
 }
-.toper-tit{
-  background: #fff;
-  margin-bottom: 10px;
-  h1{
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 12px;
-    margin-top: 6px;
-    text-align: center;
-  }
-  .mob-author{
-    height: 24px;
-    line-height: 24px;
-    margin-bottom: 0;
-    span{
-      color: #808080;
+.explore{
+   a{
+      line-height: 30px;
+      display: block;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
     }
-    .fr{
-      margin-left: 20px;
+    h1{
+      font-size: 1rem;
+      margin-top: 1rem
     }
-    .watch i{
-      color: #5799dd;
-    }
-    .nice i{
-      color: #eb8f33;
-    }
-    .share i{
-      color: #3bb2c4;
-    }
-
-    .is-active i{
-      color: #808080!important;
-    }
-
-  }
 }
 
 
@@ -289,9 +257,9 @@ header{
   padding: 10px;
 }
 body{
-  font-size: 12px;
+  font-size: 1rem;
   color: #232323;
-  background: #f2f2f2;
+  /*background: #f2f2f2;*/
 }
 select{
   outline: medium none;
@@ -313,19 +281,4 @@ select{
 }
 .p10{
   padding: 0 10px;
-}
-
-.col-nav{
-  display: inline-block;
-  float: left;
-  text-align: center;
-  a{
-    width: 100%;
-    display: inline-block;
-    font-size: 12px;
-    padding: 5px 10px 0px;
-    i{
-      display: block;
-    }
-  }
 }

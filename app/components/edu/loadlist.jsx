@@ -1,6 +1,8 @@
 import React from 'react'
-import 'whatwg-fetch'
-import { Router, Route,Link, browserHistory, IndexRoute } from 'react-router'
+
+import axios from 'axios';
+
+import { Link } from 'react-router'
 import service from '../common/config.jsx'
 
 export default class LoadList extends React.Component {
@@ -12,35 +14,49 @@ export default class LoadList extends React.Component {
             keyWord: '',
             pageIndex: 1,
             pageCount: 0,
-            bottomTxt: '',
+            bottomTxt: ''
         };
     }
     loadList = () => {
         var _this = this;
-        fetch(service.SERVICE.EDU.LIST, {
-            method: 'POST',
-            body: JSON.stringify({
-                "keyword":_this.state.srhMode?keyWord:'',
-                "page": _this.state.pageIndex,
-                "rows":10
-            })
-        })
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (result) {
-            var res = result.data;
-            _this.pageCount = Math.ceil(res.result.totalNum/10);
-            console.log(res);
-            _this.setState({pageCount: _this.pageCount})
-            if(_this.state.pageIndex == 1){
-                _this.setState({renderArr: res.result.searchData})
-            }else{
-                _this.setState({renderArr: _this.state.renderArr.concat(res.result.searchData)})
+        
+        console.log(service.SERVICE.EDU.LIST)
+        
+        axios.get('http://localhost:3000/api/v1/topics', {
+            params: {
+              tab: 'all',
+              page: 1,
+              limit: 10,
+              mdrender: false,
+              1495928831413: ''
             }
-            _this.setState({pageIndex: _this.state.pageIndex+1},function(){
-                console.log("pageIndex",_this.state.pageIndex);})
-        });
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+
+        // fetch('http://localhost:3000/api/v1/topics?tab=all&page=1&limit=10&mdrender=false&1495928831413', {
+        //     method: 'GET'
+        // })
+        // .then(function (response) {
+        //     return response.json();
+        // })
+        // .then(function (result) {
+            // var res = result.data;
+            // _this.pageCount = Math.ceil(res.result.totalNum/10);
+            // console.log(res);
+            // _this.setState({pageCount: _this.pageCount})
+            // if(_this.state.pageIndex == 1){
+            //     _this.setState({renderArr: res.result.searchData})
+            // }else{
+            //     _this.setState({renderArr: _this.state.renderArr.concat(res.result.searchData)})
+            // }
+            // _this.setState({pageIndex: _this.state.pageIndex+1},function(){
+            //     console.log("pageIndex",_this.state.pageIndex);})
+        // });
     }
     componentWillUnmount() {
         document.removeEventListener('scroll', this.handleScroll);
