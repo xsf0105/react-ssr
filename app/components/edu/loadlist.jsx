@@ -1,7 +1,5 @@
 import React from 'react'
-
 import axios from 'axios';
-
 import { Link } from 'react-router'
 import service from '../common/config.jsx'
 
@@ -56,11 +54,14 @@ export default class LoadList extends React.Component {
         }
     }
     render() {
+        let {id, title, author, visit_count, reply_count, create_at, last_reply_at} = this.props;
         var _this = this;
         var list = this.state.renderArr.map(function (res,index) {
             return (
                 <li key={index}>
-                    <Link to={{pathname:"/edu-details",query:{id:res.id}}}>《{res.title}》</Link>
+                    <Link to={{pathname:"/edu-details",query:{id:res.id}}}>
+                        {res.title}
+                    </Link>
                 </li>
             );
         });
@@ -72,3 +73,4 @@ export default class LoadList extends React.Component {
         )
   }
 }
+

@@ -15,7 +15,7 @@ module.exports = {
             },
             EDU: {
                 LIST: server_host + 'v1/topics',
-                DETAILS: server_host + 'educationStudy/load',
+                DETAILS: server_host + 'v1/topic',
                 STORE: server_host + 'educationStudyCollect/save',
                 UNSTORE: server_host + 'educationStudyCollect/delete',
                 SHARE: server_host + 'educationStudyShare/save',

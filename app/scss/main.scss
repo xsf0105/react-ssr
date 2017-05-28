@@ -180,8 +180,8 @@ $shadow: 0px 1px 2px #d1d1d1;
     a{
       padding: 0 10px 0 14px;
       display: block;
-      height: 50px;
-      line-height: 50px;
+      height: 45px;
+      line-height: 45px;
       border-bottom: $baseborder;
       background: url(../img/arrow_right_gray.png) no-repeat center right 10px;
       background-size: 10px;
@@ -248,7 +248,29 @@ header{
     }
 }
 
+.topic{
+  h4{
+    text-align: center;
+  }
+  .mob-author{
+    margin: .8rem 0;
+    font-size: 0.6rem;
+  }
+  p{
+    font-size: .8rem;
+    img{
+      width: 100%;
+    }
+  }
+}
 
+.toper {
+  h4{
+    margin-top: 1rem;
+    text-align: center;
+    color: #fff;
+  }
+}
 
 
 
