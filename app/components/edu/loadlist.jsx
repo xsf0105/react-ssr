@@ -19,44 +19,22 @@ export default class LoadList extends React.Component {
     }
     loadList = () => {
         var _this = this;
-        
-        console.log(service.SERVICE.EDU.LIST)
-        
-        axios.get('http://localhost:3000/api/v1/topics', {
+        axios.get(service.SERVICE.EDU.LIST, {
             params: {
               tab: 'all',
-              page: 1,
+              page: _this.state.pageIndex,
               limit: 10,
               mdrender: false,
               1495928831413: ''
             }
           })
           .then(function (response) {
-            console.log(response);
+            console.log(response.data.data);
+            _this.setState({renderArr: response.data.data})
           })
           .catch(function (error) {
             console.log(error);
           });
-
-        // fetch('http://localhost:3000/api/v1/topics?tab=all&page=1&limit=10&mdrender=false&1495928831413', {
-        //     method: 'GET'
-        // })
-        // .then(function (response) {
-        //     return response.json();
-        // })
-        // .then(function (result) {
-            // var res = result.data;
-            // _this.pageCount = Math.ceil(res.result.totalNum/10);
-            // console.log(res);
-            // _this.setState({pageCount: _this.pageCount})
-            // if(_this.state.pageIndex == 1){
-            //     _this.setState({renderArr: res.result.searchData})
-            // }else{
-            //     _this.setState({renderArr: _this.state.renderArr.concat(res.result.searchData)})
-            // }
-            // _this.setState({pageIndex: _this.state.pageIndex+1},function(){
-            //     console.log("pageIndex",_this.state.pageIndex);})
-        // });
     }
     componentWillUnmount() {
         document.removeEventListener('scroll', this.handleScroll);
@@ -79,20 +57,16 @@ export default class LoadList extends React.Component {
     }
     render() {
         var _this = this;
-        var repoList = this.state.renderArr.map(function (repo,index) {
+        var list = this.state.renderArr.map(function (res,index) {
             return (
                 <li key={index}>
-
-                    { index==0 || index==1 || index==2 ? <img className="hot-icon" src={require('../../img/hot.png')} alt="" width="35" /> : null }
-
-                    <Link to={{pathname:"/edu-details",query:{id:repo.id}}}>{repo.serviceName}</Link>
-
+                    <Link to={{pathname:"/edu-details",query:{id:res.id}}}>《{res.title}》</Link>
                 </li>
             );
         });
         return(
             <div className="list">
-                <ul>{repoList}</ul>
+                <ul>{list}</ul>
                 { _this.state.bottomTxt?<div className="loadmore">{_this.state.bottomTxt}</div>:null }
             </div>
         )

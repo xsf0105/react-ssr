@@ -1,5 +1,4 @@
-// const server_host =  'http://115.239.229.12:8020/';
-const server_host =  window.location.host+'/';
+const server_host =  'https://cnodejs.org/api/';
 
 module.exports = {
     SERVICE: {
@@ -15,7 +14,7 @@ module.exports = {
 
             },
             EDU: {
-                LIST: server_host + 'api/v1/topics',
+                LIST: server_host + 'v1/topics',
                 DETAILS: server_host + 'educationStudy/load',
                 STORE: server_host + 'educationStudyCollect/save',
                 UNSTORE: server_host + 'educationStudyCollect/delete',
