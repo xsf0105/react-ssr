@@ -10,32 +10,34 @@ export default React.createClass({
                 <div className="swiper-container">
                     <Slider />
                 </div>
+
                 <div className="top-nav clearfix">
                     <div>
                         <a href="javascript:void(0);">
                             <i className="icon iconfont">&#xe600;</i>
-                            带薪如厕
+                            hey
                         </a>
                     </div>
                     <div>
                         <a href="javascript:void(0);">
                             <i className="icon iconfont">&#xe607;</i>
-                            G20不放假
+                            hey
                         </a>
                     </div>
                     <div>
                         <a href="javascript:void(0);">
                             <i className="icon iconfont">&#xe60e;</i>
-                            公交上班
+                            hey
                         </a>
                     </div>
                 </div>
+
             </div>
             <div className="menu clearfix">
                 <div className="col3">
                     <NavLink to="/edu">
                         <img src={require('../../img/menu_edu.png')}/>
-                        一年级画画
+                        Click Me
                     </NavLink>
                 </div>
                 <div className="col3">

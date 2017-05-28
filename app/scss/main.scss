@@ -73,12 +73,16 @@ $shadow: 0px 1px 2px #d1d1d1;
       display: inline-block;
       font-size: 12px;
       padding-top: 10px;
+      background: #f1f1f1;
       img{
         width: 52px;
         display: block;
         margin: 0 auto 6px;
       }
     }
+  }
+  >div:first-child a{
+    background: #fff;
   }
   div:nth-child(3n){
     border-right: 0;
