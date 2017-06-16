@@ -59,6 +59,11 @@ myfile.js: line 10, col 39, Octal literals are not allowed in strict mode.
 ### FAQ
 Checking the node version, when you have a problem with running npm start. And updata your node to high version.
 
+
+### Life Cycle
+![image](https://raw.githubusercontent.com/allan2coder/React-SPA-Tutorial/master/screenshots/react-lifecycle.png)
+
+
 ## Thanks to donation
 
 #### why not try
