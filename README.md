@@ -69,5 +69,3 @@ Checking the node version, when you have a problem with running npm start. And u
 * [你可能不需要redux-看你的项目是否需要Redux](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
 ## License
 MIT
-
-# React-SPA-Tutorial
