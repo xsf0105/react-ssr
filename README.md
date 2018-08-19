@@ -6,6 +6,9 @@
 - [vue2.x](https://github.com/allan2coder/VUE2-SPA-Tutorial)
 - [Angular2.x](https://github.com/allan2coder/Angular2-SPA)
 
+### Screenshots
+![image](https://raw.githubusercontent.com/allan2coder/React-SPA-Tutorial/master/screenshots/3.png)
+
 ## Features
 - Equip with React, ES6 & Babel 6
 - Lint with JSHint.
@@ -52,10 +55,6 @@ myfile.js: line 10, col 39, Octal literals are not allowed in strict mode.
 
 ### FAQ
 Checking the node version, when you have a problem with running npm start. And updata your node to high version.
-
-
-### Life Cycle
-![image](https://raw.githubusercontent.com/allan2coder/React-SPA-Tutorial/master/screenshots/react-lifecycle.png)
 
 
 ### Reference Articles
