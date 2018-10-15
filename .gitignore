@@ -1,4 +1,4 @@
-node_modules
-build/
+# 忽略文件
+node_modules/
 npm-debug.log
-.idea/
+1.js

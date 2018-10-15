@@ -1,0 +1,108 @@
+/* login page style */
+
+.form {
+    width: 280px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    li {
+        text-align: center;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #575757;
+        position: relative;
+        &.form_border {
+            padding-top: 40px;
+            border-bottom: 1px solid #eee;
+        }
+        &.form_pw {
+            padding-bottom: 40px;
+        }
+        &.form_top {
+            padding-top: 40px;
+        }
+        .segmentation {
+            background: #eeeeee;
+            border-radius: 5px;
+            display: inline-block;
+            width: 74px;
+            height: 6px;
+        }
+        input {
+            border: none;
+            text-align: center;
+            outline: none;
+            width: 100%;
+        }
+        span.error {
+            color: #f00;
+            position: absolute;
+            right: -115px;
+            font-size: 12px;
+            line-height: 15px;
+            bottom: 8px;
+            width: 110px;
+            text-align: left;
+        }
+        .form_submit {
+            border: 1px solid #c9c9c9;
+            width: 100%;
+            background: #ffffff;
+            height: 45px;
+            line-height: 45px;
+            color: #727272;
+            cursor: pointer;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+        }
+        .remmber_input
+        {
+          width: auto;
+        }
+        .remmber_pw {
+            font-size: 14px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.form_reg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #eeeeee;
+    background: #fff;
+    line-height: 60px;
+    text-align: center;
+    a {
+        margin: 0 5px;
+        color: #727272;
+        text-decoration: underline;
+    }
+}
+
+.tips {
+    background: #fff;
+    height: 40px;
+    position: fixed;
+    top: 46px;
+    width: 400px;
+    margin-left: -200px;
+    left: 50%;
+    border-radius: 3px;
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 200;
+    z-index: 10;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+
+.tips_show {
+    /* composes: tips; */
+    display: block;
+}

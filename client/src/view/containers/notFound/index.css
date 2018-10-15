@@ -1,0 +1,9 @@
+.wrapper {
+    text-align: center;
+    padding-top: 38px;
+    line-height: 2em;
+    font-size: 12px;
+    img {
+        margin-bottom: 30px;
+    }
+}

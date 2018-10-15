@@ -1,0 +1,41 @@
+body {
+  background: #fff;
+}
+
+.banner {
+  height: 300px;
+  border-bottom: 1px solid #eee;
+  color: #626262;
+  p {
+    text-align: center;
+  }
+}
+
+.banner_text {
+  padding: 30px 0;
+}
+
+.logo_en {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.upload_btn {
+  border: 1px solid #c9c9c9;
+  width: 110px;
+  background: #ffffff;
+  height: 35px;
+  line-height: 35px;
+  color: #727272;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  font-size: 12px;
+  margin-top: 5px;
+  &:hover {
+    background:#000;
+    color:#fff;
+    border: 1px solid #000;
+  }
+}
+
