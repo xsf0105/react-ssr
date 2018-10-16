@@ -23,6 +23,10 @@ npm start
 在 `server/config/db.json`
 中配置 mysql 的数据库名称和用户名密码
 
+## 查看服务器日志
+```
+pm2 log
+```
 
 ## 项目结构
 ```
