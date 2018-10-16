@@ -28,7 +28,7 @@ const config = {
     // index: ['react-hot-loader/patch', 'webpack-hot-middleware/client', './src/index.js']
     index: [
       "react-hot-loader/patch",
-      "webpack-dev-server/client?http://0.0.0.0:4000",
+      "webpack-dev-server/client?http://0.0.0.0:8000",
       "webpack/hot/only-dev-server",
       "./src/index.js"
     ],

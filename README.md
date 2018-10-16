@@ -14,7 +14,7 @@ npm start
 npm i pm2 -g
 npm i
 npm start
-// 浏览器打开 http://localhost:4000/
+// 浏览器打开 http://localhost:3000/
 ```
 
 ## Mysql 使用
