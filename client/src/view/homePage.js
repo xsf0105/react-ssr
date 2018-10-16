@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 import Nav from "./components/nav/index.js";
+import axios from "axios";
 
 import "./reset.css";
 import "./homePage.css";
 
 class App extends Component {
+  componentDidMount(){
+    console.log(11)
+    axios.post("/getList").then(res=>{
+      console.log(res);
+    })
+  }
   render() {
     return (
       <React.Fragment>
@@ -16,31 +23,31 @@ class App extends Component {
                 <h5>热门文章</h5>
                 <ul className="nav-list">
                   <li className="nav-item router-link-exact-active">
-                    <span class="title">推荐</span>
+                    <span className="title">推荐</span>
                   </li>
                   <li className="nav-item router-link-exact-active">
-                    <span class="title">前端</span>
+                    <span className="title">前端</span>
                   </li>
                   <li className="nav-item router-link-exact-active">
-                    <span class="title">Android</span>
+                    <span className="title">Android</span>
                   </li>
                   <li className="nav-item router-link-exact-active">
-                    <span class="title">后端</span>
+                    <span className="title">后端</span>
                   </li>
                   <li className="nav-item router-link-exact-active">
-                    <span class="title">人工智能</span>
+                    <span className="title">人工智能</span>
                   </li>
                   <li className="nav-item router-link-exact-active">
-                    <span class="title">IOS</span>
+                    <span className="title">IOS</span>
                   </li>
                   <li className="nav-item router-link-exact-active">
-                    <span class="title">工具资源</span>
+                    <span className="title">工具资源</span>
                   </li>
                   <li className="nav-item router-link-exact-active">
-                    <span class="title">阅读</span>
+                    <span className="title">阅读</span>
                   </li>
                   <li className="nav-item router-link-exact-active">
-                    <span class="title">运维</span>
+                    <span className="title">运维</span>
                   </li>
                 </ul>
               </nav>
@@ -52,36 +59,35 @@ class App extends Component {
             </div>
             <aside className="welcome-side">
               <section className="shadow section auth-section">
-                <div class="title">掘金 - juejin.im</div>
-                <div class="slogan">一个帮助开发者成长的社区</div>
-                <div class="ticket">
+                <div className="title">掘金 - juejin.im</div>
+                <div className="slogan">一个帮助开发者成长的社区</div>
+                <div className="ticket">
                   现在注册，送你
-                  <a href="/books" class="highlight">
+                  <a href="/books" className="highlight">
                     45元
                   </a>
                   买小册
                 </div>
-                <div class="input-group">
-                  <div class="input-box">
-                    <input maxlength="20" placeholder="用户名" class="input" />
+                <div className="input-group">
+                  <div className="input-box">
+                    <input maxLength="20" placeholder="用户名" className="input" />
                   </div>
 
-                  <div class="input-box">
-                    <input maxlength="64" placeholder="手机号" class="input" />
+                  <div className="input-box">
+                    <input maxLength="64" placeholder="手机号" className="input" />
                   </div>
 
-                  <div class="input-box">
+                  <div className="input-box">
                     <input
                       name="registerPassword"
                       type="password"
-                      maxlength="64"
-                      autocomplete="new-password"
+                      maxLength="64"
                       placeholder="密码（不少于 6 位）"
-                      class="input"
+                      className="input"
                     />
                   </div>
                 </div>
-                <button class="btn submit-btn">立即注册</button>
+                <button className="btn submit-btn">立即注册</button>
               </section>
             </aside>
           </div>

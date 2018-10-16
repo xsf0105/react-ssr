@@ -33,7 +33,7 @@ let // 加载koa主模块
   json = require("koa-json"),
   passport = require("koa-passport"),
   session = require("koa-session"),
-  routers = require("./server/route/router.js");
+  routers = require("./server/routes/router.js");
 
 // 初始化koa对象
 const App = () => {
