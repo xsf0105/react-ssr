@@ -1,4 +1,4 @@
-# React 服务端渲染
+# React 服务端渲染（大改版）
 
 ## 使用
 前端开发目录为：clent/，client 中执行:
@@ -16,7 +16,6 @@ npm i
 npm start
 // 浏览器打开 http://localhost:8000/
 ```
-
 
 ## Mysql 使用
 
