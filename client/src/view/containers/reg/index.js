@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import Nav from "../../../view/components/nav/index.js";
 import RegForm from "./regForm";
-import Login from "./index.css";
+import "./index.css";
 
 class App extends Component {
   constructor(props) {
@@ -13,14 +13,16 @@ class App extends Component {
   render() {
     let { history } = this.props;
     return (
-      <div>
+      <React.Fragment>
         <Nav />
-        <RegForm history={history} />
-        <div className={Login.form_reg}>
-          点击 注册 按钮表示同意
-          <a href="#">《用户注册规则》</a>
+        <div className="reg-container">
+          <RegForm history={history} />
+          <div className="form-reg">
+            点击 注册 按钮表示同意
+            <a href="#">《用户注册规则》</a>
+          </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -13,7 +13,6 @@ class Nav extends Component {
   render() {
     let logined = this.props.user.logined;
     return (
-      // <header className="main-header">
       <header className="main-header">
         <ul className="nav">
           <li className="fl">
@@ -22,21 +21,23 @@ class Nav extends Component {
           <li className="fl">
             <Link to="/notFound">发现</Link>
           </li>
-          <li className={logined ? "avatar" : "login_visable"}>
-            {/* <img src={defaultAvatar} /> */}
-            <dl>
-              <Link to="/">我的主页</Link>
-              <Link to="/logout">退出</Link>
-            </dl>
-          </li>
-          <li className={logined ? "login_visable" : "fr"}>
-            <Link to="/reg">
-              <b>注 册</b>
-            </Link>
-          </li>
-          <li className={logined ? "login_visable" : "fr"}>
-            <Link to="/login">登 录</Link>
-          </li>
+
+          {logined ? (
+            <li className="avatar">
+              {/* <img src={defaultAvatar} /> */}
+              <dl>
+                <Link to="/">我的主页</Link>
+                <Link to="/logout">退出</Link>
+              </dl>
+            </li>
+          ) : (
+            <li className="fr">
+              <Link to="/reg">
+                <b>注 册</b>
+              </Link>
+              <Link to="/login">登 录</Link>
+            </li>
+          )}
         </ul>
       </header>
     );

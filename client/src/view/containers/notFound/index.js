@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import Nav from '../../components/nav/index.js';
 
 import '../../reset.css';
-import Style_notFound from './index.css';
+import './index.css';
 
 export default class App extends Component {
   constructor(props) {
@@ -12,8 +12,8 @@ export default class App extends Component {
     return (
       <div>
         <Nav/>
-        <div className={Style_notFound.wrapper}>
-          <p>NOT FOUND PAGE!</p>
+        <div className="wrapper">
+          <p>404!</p>
           <p>找不到页面</p>
         </div>
       </div>

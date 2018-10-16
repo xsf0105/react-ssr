@@ -130,7 +130,7 @@ export async function reg(ctx) {
 }
 
 //vaildate uesrname
-export async function vaildate_user(ctx) {
+export async function vaildateUser(ctx) {
   if (ctx.accepts("json", "html") == "json") {
     let data = ctx.request.body;
     //If reg data is null,reback some tips
@@ -169,7 +169,7 @@ export async function vaildate_user(ctx) {
   }
 }
 
-export async function vaildate_email(ctx) {
+export async function vaildateEmail(ctx) {
   if (ctx.accepts("json", "html") == "json") {
     let data = ctx.request.body;
     //If reg data is null,reback some tips

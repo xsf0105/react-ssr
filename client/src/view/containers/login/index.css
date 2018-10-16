@@ -17,7 +17,7 @@
         &.form_pw {
             padding-bottom: 40px;
         }
-        &.form_top {
+        &.form-top {
             padding-top: 40px;
         }
         .segmentation {
@@ -64,45 +64,4 @@
             margin-left: 5px;
         }
     }
-}
-
-.form_reg {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-top: 1px solid #eeeeee;
-    background: #fff;
-    line-height: 60px;
-    text-align: center;
-    a {
-        margin: 0 5px;
-        color: #727272;
-        text-decoration: underline;
-    }
-}
-
-.tips {
-    background: #fff;
-    height: 40px;
-    position: fixed;
-    top: 46px;
-    width: 400px;
-    margin-left: -200px;
-    left: 50%;
-    border-radius: 3px;
-    display: none;
-    line-height: 40px;
-    text-align: center;
-    font-size: 14px;
-    color: #000000;
-    font-weight: 200;
-    z-index: 10;
-    box-shadow: 1px 1px 3px #ccc;
-}
-
-
-.tips_show {
-    /* composes: tips; */
-    display: block;
 }

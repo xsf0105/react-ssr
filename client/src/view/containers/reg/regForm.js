@@ -1,12 +1,9 @@
-"use strict";
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Field, reduxForm, SubmissionError } from "redux-form";
 import { connect } from "react-redux";
 import axios from "axios";
 import * as actions from "../../../redux/actions/index";
-
-import Login from './index.css';
 
 if (process.env.NODE_ENV !== "production") {
   require("../../../mock/mock");
@@ -57,6 +54,7 @@ const asyncValidate = async (values, dispatch, props, field) => {
 
 const submit = async function submit(values) {
   let _this = this;
+  console.log(111);
   await axios.post("/regUser", values).then(function(response) {
     console.log(response);
     if (!response.data.success) {
@@ -101,7 +99,7 @@ const validate = values => {
 const renderField = ({ input, label, type, meta: { touched, error } }) => (
   <div>
     <input {...input} placeholder={label} type={type} />{" "}
-    {touched && (error && <span className={Login.error}>{error}</span>)}
+    {touched && (error && <span className="error">{error}</span>)}
   </div>
 );
 
@@ -117,18 +115,15 @@ class RegForm extends Component {
     super(props);
   }
   render() {
-    const { error, handleSubmit, pristine, submitting } = this.props;
+    const { error, handleSubmit } = this.props;
     return (
-      <form onSubmit={handleSubmit(submit.bind(this))}>
-        <div className={error ? Login.tips_show : Login.tips}>{error}</div>
-        <ul className={Login.form}>
-          <li>
-            <i className={Login.segmentation} />
-          </li>
+      <form onSubmit={handleSubmit(submit.bind(this))} className="reg-form">
+        <div className={error ? "tips-show" : "tips"}>{error}</div>
+        <ul className="form">
           <li>
             <b>注册账户</b>
           </li>
-          <li className={Login.form_border}>
+          <li className="form-border">
             <Field
               component={renderField}
               label="用户名"
@@ -136,7 +131,7 @@ class RegForm extends Component {
               type="text"
             />
           </li>
-          <li className={Login.form_border}>
+          <li className="form-bordre">
             <Field
               component={renderField}
               label="密码"
@@ -144,7 +139,7 @@ class RegForm extends Component {
               type="password"
             />
           </li>
-          <li className={Login.form_border}>
+          <li className="form-border">
             <Field
               component={renderField}
               label="重复密码"
@@ -152,7 +147,7 @@ class RegForm extends Component {
               type="password"
             />
           </li>
-          <li className={Login.form_border}>
+          <li className="form-border">
             <Field
               component={renderField}
               label="邮箱"
@@ -160,10 +155,10 @@ class RegForm extends Component {
               type="text"
             />
           </li>
-          <li className={Login.form_top}>
+          <li className="">
             <p>请输入下列验证码</p>
           </li>
-          <li className={Login.form_border}>
+          <li className="form-border">
             <Field
               component={renderField}
               name="captcha"
@@ -171,12 +166,8 @@ class RegForm extends Component {
               type="text"
             />
           </li>
-          <li className={Login.form_top}>
-            <button
-              className={Login.form_submit}
-              disabled={pristine || submitting}
-              type="submit"
-            >
+          <li className="form-top">
+            <button className="form-submit" type="submit">
               注册
             </button>
           </li>
@@ -188,9 +179,7 @@ class RegForm extends Component {
 
 RegForm.propTypes = {
   error: PropTypes.object,
-  pristine: PropTypes.bool,
-  handleSubmit: PropTypes.func,
-  submitting: PropTypes.bool
+  handleSubmit: PropTypes.func
 };
 
 export default connect(

@@ -4,7 +4,7 @@ import { StaticRouter } from "react-router-dom";
 import { layout } from "../view/layout.js";
 import { Provider } from "react-redux";
 import configureStore from "../../client/src/redux/store/configureStore";
-import App from "../../client/src/view/containers/notFound/404.js";
+import App from "../../client/src/view/containers/notFound/index.js";
 
 //get page and switch json and html
 export function index(ctx) {

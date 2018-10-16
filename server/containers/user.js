@@ -34,7 +34,7 @@ export async function index(ctx) {
         //     console.log(store.getState());
         //     ctx.body = layout(renderToString(<RouterContext {...renderProps}/>), {a: 1});
         //   } else {
-        //     console.log(404);
+        //     console.log(notFound);
         //   }
         // })
       }

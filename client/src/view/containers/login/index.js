@@ -5,7 +5,7 @@ import Nav from "./../../components/nav/index.js";
 import LoginForm from "./loginForm";
 
 import "../../reset.css";
-import Login from "./index.css";
+import "./index.css";
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class App extends Component {
       <div>
         <Nav />
         <LoginForm history={this.props.history} />
-        <div className={Login.form_reg}>
+        <div className="form-reg">
           还没有账号?
           <a href="#">立即注册</a>
         </div>

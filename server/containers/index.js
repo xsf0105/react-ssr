@@ -49,7 +49,6 @@ export function index(ctx) {
   }
 }
 
-
 // get something
 export async function getList(ctx) {
   if (ctx.accepts("json", "html") == "json") {
