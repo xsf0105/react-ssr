@@ -25,7 +25,7 @@ npm start
 
 
 ## 项目结构
-
+```
 ├── client 前端目录
 |
 ├── public 服务器静态资源
@@ -37,3 +37,4 @@ npm start
     ├── models 操作 数据库 代码逻辑
     ├── routes 后端路由
     └── view 后端页面
+```
