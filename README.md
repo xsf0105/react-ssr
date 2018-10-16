@@ -3,14 +3,14 @@
 ## 使用
 前端开发目录为：clent/，client 中执行:
 
-```bash
+```
 npm i
 npm start
 // 浏览器打开 http://localhost:8000/
 ```
 
 客户端开发及部署在根目录执行：
-```bash
+```
 npm i pm2 -g
 npm i
 npm start
@@ -22,6 +22,28 @@ npm start
 开启本地数据库 Mysql, 将 mysql 中的文件夹 sql 文件导入数据库, 
 在 `server/config/db.json`
 中配置 mysql 的数据库名称和用户名密码
+
+建立连接
+Sequelize会在初始化时设置一个连接池，这样你应该为每个数据库创建一个实例：
+```
+var sequelize = new Sequelize('database', 'username', 'password', {
+  host: 'localhost',
+  dialect: 'mysql'|'mariadb'|'sqlite'|'postgres'|'mssql',
+  pool: {
+    max: 5,
+    min: 0,
+    idle: 10000
+  },
+
+  // 仅 SQLite 适用
+  storage: 'path/to/database.sqlite'
+});
+
+// 或者可以简单的使用一个连接 uri
+var sequelize = new Sequelize('postgres://user:pass@example.com:5432/dbname');
+```
+
+
 
 ## 查看服务器日志
 ```
