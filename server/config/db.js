@@ -1,7 +1,4 @@
-'use strict';
-// load sequelize
 import Sequelize from 'sequelize';
-// load db.json
 import configs from './db.json';
 
 const dbHost = configs.mysql.host,
@@ -27,6 +24,7 @@ const db = {
         }
     })
 };
+
 // user table model
 db.User = db.sequelize.import ('../models/user.js');
 db.UserInfo = db.sequelize.import ('../models/userInfo.js');

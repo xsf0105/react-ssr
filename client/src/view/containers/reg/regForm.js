@@ -9,7 +9,7 @@ import * as actions from "../../../redux/actions/index";
 import Login from './index.css';
 
 if (process.env.NODE_ENV !== "production") {
-  require("../../../data/mock");
+  require("../../../mock/mock");
 }
 
 let validataUsername = false;

@@ -6,7 +6,7 @@
 ```bash
 npm i
 npm start
-// 浏览器打开 http://localhost:4000/
+// 浏览器打开 http://localhost:8000/
 ```
 
 客户端开发及部署在根目录执行：
@@ -14,7 +14,7 @@ npm start
 npm i pm2 -g
 npm i
 npm start
-// 浏览器打开 http://localhost:8000/
+// 浏览器打开 http://localhost:4000/
 ```
 
 ## Mysql 使用

@@ -8,8 +8,7 @@ const path = require("path"),
   //加载自动化HTML自动化编译插件
   HtmlWebpackPlugin = require("html-webpack-plugin"),
   autoprefixer = require("autoprefixer"),
-  precss = require("precss"),
-  postcsseasysprites = require("postcss-easysprites");
+  precss = require("precss");
 
 /**
   设置默认常用路径
@@ -29,7 +28,7 @@ const config = {
     // index: ['react-hot-loader/patch', 'webpack-hot-middleware/client', './src/index.js']
     index: [
       "react-hot-loader/patch",
-      "webpack-dev-server/client?http://0.0.0.0:5000",
+      "webpack-dev-server/client?http://0.0.0.0:4000",
       "webpack/hot/only-dev-server",
       "./src/index.js"
     ],
