@@ -1,7 +1,7 @@
 {
     "publicPath": "/",
     "clientPort": 8000,
-    "serverPort": 4000,
+    "serverPort": 3000,
     "text": {
         "webSiteName": "Web Site",
         "indexTitle": "Web Site - Index Page"

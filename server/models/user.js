@@ -1,3 +1,5 @@
+// model 定义格式为sequelize.define('name', {attributes}, {options})
+// model 模版数据库，建立数据库的摸板
 export default function(sequelize, DataTypes) {
   var User = sequelize.define("user", {
     id: {
@@ -23,6 +25,7 @@ export default function(sequelize, DataTypes) {
       }
     }
   });
+
   User.sync();
   return User;
 }

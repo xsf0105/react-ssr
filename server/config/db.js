@@ -7,7 +7,7 @@ const dbHost = configs.mysql.host,
     dbPassword = configs.mysql.password,
     dbName = configs.mysql.dbName;
 
-// mysql connect option
+// mysql 连接配置
 const db = {
     sequelize: new Sequelize(dbName, dbUsername, dbPassword, {
         host: dbHost,
@@ -19,7 +19,7 @@ const db = {
             idle: 10000
         },
         define: {
-            freezeTableName: true,
+            freezeTableName: true,  // 数据库中的表明与程序中的保持一致，否则数据库中的表名会以复数的形式命名
             timestamps: false
         }
     })
