@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import axios from "axios";
 import * as actions from "../../../redux/actions/index";
 
-import Login from './index.css';
+import Login from "./index.css";
 
 if (process.env.NODE_ENV !== "production") {
   require("../../../data/mock");
@@ -14,9 +14,7 @@ if (process.env.NODE_ENV !== "production") {
 
 const submit = async function submit(values) {
   let _this = this;
-  console.log(_this);
   await axios.post("/login", values).then(function(response) {
-    console.log(response);
     if (!response.data.success) {
       throw new SubmissionError({ _error: response.data.message });
     } else {

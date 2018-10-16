@@ -6,6 +6,8 @@ const router = new Router();
 
 //Index page route
 router.get('/', require('../containers/index.js').index);
+router.post('/getList', require('../containers/index.js').getList);
+
 //404 page route
 router.get('/user', require('../containers/user.js').index);
 router.get('/get_user_info', require('../containers/user.js').getUserInfo);

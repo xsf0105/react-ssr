@@ -1,4 +1,4 @@
-import configureStore from './configureStore';
+import configureStore from "./configureStore";
 
 const store = configureStore(window.__REDUX_DATA__);
 

@@ -27,3 +27,10 @@ Mock.mock('/reg_user', {
   'message': '注册失败!',
   'data': {}
 });
+
+Mock.mock('/getList', {
+  'success': true,
+  'status': 200,
+  'message': '!!!!',
+  'data': {}
+});
