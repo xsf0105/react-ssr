@@ -8,7 +8,7 @@ import "./homePage.css";
 class App extends Component {
   componentDidMount(){
     console.log(11)
-    axios.post("/getList").then(res=>{
+    axios.post("/rest/v1/getList").then(res=>{
       console.log(res);
     })
   }

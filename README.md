@@ -64,3 +64,7 @@ pm2 log
     ├── routes 后端路由
     └── view 后端页面
 ```
+
+### ps:
+- server/models
+Model相当于数据库中表，有时它也会被称为“模型”或“工厂”。Model不能通过构造函数创建，而只能通过sequlize.define方法来定义或通过sequlize.import导入。通过define定义一个Model，就相当于定义了一种模型与数据表之间的映射关系，通过模型可以实现对表记录的增、删、改、查等操作。

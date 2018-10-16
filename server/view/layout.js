@@ -1,5 +1,3 @@
-'use strict';
-
 import common from '../../common.json';
 
 exports.layout = function(content, data) {

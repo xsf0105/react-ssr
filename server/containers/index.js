@@ -6,6 +6,10 @@ import { Provider } from "react-redux";
 import configureStore from "../../client/src/redux/store/configureStore";
 import App from "../../client/src/view/homePage.js";
 
+import db from "../config/db.js";
+const User = db.User;
+const UserInfo = db.UserInfo;
+
 //get page and switch json and html
 export function index(ctx) {
   switch (ctx.accepts("json", "html")) {
@@ -52,95 +56,114 @@ export function index(ctx) {
 // get something
 export async function getList(ctx) {
   if (ctx.accepts("json", "html") == "json") {
-    let data = ctx.request.body;
+    // let data = ctx.request.body; // 传参
     //If reg data is null,reback some tips
     // if (data.username) {
-      // let userCount = await User.count({
-      //   where: {
-      //     username: data.username
-      //   }
-      // });
-      let callBackData = {
-        success: false,
-        status: 200,
-        message: "!!!",
-        data: {}
-      };
-      
-      ctx.body = callBackData;
+    // let userCount = await User.count({
+    //   where: {
+    //     username: data.username
+    //   }
+    // });
+
+    // UserInfo.findAll().then(function(res) {
+    //   console.log(res, 888);
+    //   let callBackData = {
+    //     success: false,
+    //     status: 200,
+    //     message: "!!!",
+    //     data: {}
+    //   };
+    //   ctx.body = callBackData;
+    // });
+
+    User.findOne({
+      where: {
+        id: 1
+      }
+    }).then(res => {
+      console.log(res, 8888);
+      // let callBackData = {
+      //   success: false,
+      //   status: 200,
+      //   message: "!!!",
+      //   data: {}
+      // };
+      // ctx.body = callBackData;
+    });
+
     // }
   }
 }
 
-// export async function login(ctx) {
-//   if (ctx.accepts("json", "html") == "json") {
-//     let data = ctx.request.body;
-//     //If reg data is null,reback some tips
-//     if (!data.username || !data.password) {
-//       let callBackData = {
-//         success: false,
-//         status: 200,
-//         message: "请输入您的账号或邮箱和密码!",
-//         data: {}
-//       };
-//       ctx.body = callBackData;
-//     } else {
-//       await User.findOne({
-//         attributes: ["id", "username", "password"],
-//         where: {
-//           $or: [
-//             {
-//               username: data.username
-//             },
-//             {
-//               email: data.username
-//             }
-//           ]
-//         }
-//       }).then(
-//         async user => {
-//           if (user) {
-//             let isMatch = bcrypt.compareSync(data.password, user.password);
-//             if (isMatch) {
-//               await passport.authenticate("local", function(err, user) {
-//                 let callBackData = {
-//                   success: true,
-//                   status: 200,
-//                   message: "登录成功!",
-//                   data: {}
-//                 };
-//                 ctx.body = callBackData;
-//                 return ctx.login(user);
-//               })(ctx);
-//             } else {
-//               let callBackData = {
-//                 success: false,
-//                 status: 200,
-//                 message: "请输入您的账号或邮箱和密码错误!",
-//                 data: {}
-//               };
-//               ctx.body = callBackData;
-//             }
-//           } else {
-//             let callBackData = {
-//               success: false,
-//               status: 200,
-//               message: "用户名或邮箱不存在!",
-//               data: {}
-//             };
-//             ctx.body = callBackData;
-//           }
-//         },
-//         function() {
-//           let callBackData = {
-//             success: false,
-//             status: 200,
-//             message: "登录失败!",
-//             data: {}
-//           };
-//           ctx.body = callBackData;
-//         }
-//       );
-//     }
-//   }
-// }
+export async function login(ctx) {
+  if (ctx.accepts("json", "html") == "json") {
+    let data = ctx.request.body;
+    //If reg data is null,reback some tips
+    if (!data.username || !data.password) {
+      let callBackData = {
+        success: false,
+        status: 200,
+        message: "请输入您的账号或邮箱和密码!",
+        data: {}
+      };
+      ctx.body = callBackData;
+    } else {
+      await User.findOne({
+        attributes: ["id", "username", "password"],
+        where: {
+          $or: [
+            {
+              username: data.username
+            },
+            {
+              email: data.username
+            }
+          ]
+        }
+      }).then(
+        async user => {
+          if (user) {
+            let isMatch = bcrypt.compareSync(data.password, user.password);
+            if (isMatch) {
+              await passport.authenticate("local", function(err, user) {
+                let callBackData = {
+                  success: true,
+                  status: 200,
+                  message: "登录成功!",
+                  data: {}
+                };
+                ctx.body = callBackData;
+                return ctx.login(user);
+              })(ctx);
+            } else {
+              let callBackData = {
+                success: false,
+                status: 200,
+                message: "请输入您的账号或邮箱和密码错误!",
+                data: {}
+              };
+              ctx.body = callBackData;
+            }
+          } else {
+            let callBackData = {
+              success: false,
+              status: 200,
+              message: "用户名或邮箱不存在!",
+              data: {}
+            };
+            ctx.body = callBackData;
+          }
+        },
+        function() {
+          let callBackData = {
+            success: false,
+            status: 200,
+            message: "登录失败!",
+            data: {}
+          };
+          ctx.body = callBackData;
+        }
+      );
+    }
+  }
+}
