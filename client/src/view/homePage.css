@@ -1,0 +1,111 @@
+.main-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+.view {
+  margin-top: 1.7rem;
+  display: flex;
+}
+.welcome-feed {
+  background: #fff;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.welcome-side {
+  background: #fff;
+  width: 240px;
+  min-width: 240px;
+  margin-left: 20px;
+  display: block;
+}
+
+.category-nav {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.nav-list {
+  display: flex;
+  align-items: baseline;
+}
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+}
+li.nav-item.route-active {
+  color: #007fff;
+}
+li.nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+.category-nav .nav-list li.nav-item.route-active {
+  color: #007fff;
+}
+
+.section {
+  background-color: #fff;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  padding: 1.333rem;
+}
+
+.section .title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.167rem;
+  color: #2e3135;
+}
+.ticket {
+  font-size: 14px;
+  color: #8f969c;
+  margin-bottom: 1rem;
+}
+.input-box {
+  position: relative;
+  margin-bottom: 0.833rem;
+}
+.input {
+  padding: 0.5rem 0.6rem;
+  width: 100%;
+  background-color: #fbfbfb;
+  border: 1px solid #f4f4f4;
+  border-radius: 2px;
+  outline: none;
+  box-sizing: border-box;
+}
+.submit-btn {
+  padding: 0.7rem 0;
+  width: 100%;
+  font-size: 1.167rem;
+  border-radius: 2px;
+  appearance: none;
+  background-color: #007fff;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0371df;
+  color: #fff;
+}

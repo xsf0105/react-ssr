@@ -1,77 +1,81 @@
 .avatar {
-    float: right;
-    position: relative;
-    img {
-        width: 30px;
-        vertical-align: middle;
-        border-radius: 50%;
-    }
-    &:hover {
-        dl {
-            display: block;
-        }
-    }
+  float: right;
+  position: relative;
+  img {
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+  &:hover {
     dl {
-        position: absolute;
-        width: 100%;
-        left: -1px;
-        text-align: center;
-        line-height: 23px;
-        border: 1px solid #eee;
-        display: none;
-        color: #686868;
-        background: #fff;
-        dt {
-            cursor: pointer;
-            &:hover {
-                background: #f3f3f3;
-            }
-        }
+      display: block;
     }
+  }
+  dl {
+    position: absolute;
+    width: 100%;
+    left: -1px;
+    text-align: center;
+    line-height: 23px;
+    border: 1px solid #eee;
+    display: none;
+    color: #686868;
+    background: #fff;
+    dt {
+      cursor: pointer;
+      &:hover {
+        background: #f3f3f3;
+      }
+    }
+  }
 }
 
-
 .nav {
-    transition: opacity 250ms ease-in-out;
-    height: 45px;
-    line-height: 45px;
-    background: #fff;
-    border-bottom: 1px solid #eeeeee;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9;
-    li {
+  transition: opacity 250ms ease-in-out;
+  height: 45px;
+  line-height: 45px;
+  background: #fff;
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  li {
+    display: inline-block;
+    padding: 0 20px;
+    a {
+      color: #626262;
+    }
+    &.fl {
+      border-left: 1px solid #eee;
+    }
+    &.fr {
+      border-right: 1px solid #eee;
+    }
+    &.login_visable {
+      display: none;
+    }
+    .logo {
+      background-size: 100% 100%;
+      width: 26px;
+      height: 22px;
       display: inline-block;
-      padding: 0 20px;
-      a {
-        color: #626262;
-      }
-      &.fl {
-        border-left: 1px solid #eee;
-      }
-      &.fr {
-        border-right: 1px solid #eee;
-      }
-      &.login_visable {
-        display: none;
-      }
-      .logo {
-        background-size: 100% 100%;
-        width: 26px;
-        height: 22px;
-        display: inline-block;
-        vertical-align: middle;
-      }
+      vertical-align: middle;
     }
   }
+}
 
-  .fl {
-    float: left;
-  }
-  
-  .fr {
-    float: right;
-  }
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.main-header {
+  position: relative;
+  height: 46px;
+}

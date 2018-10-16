@@ -61,21 +61,21 @@ const config = {
             loader: "css-loader",
             options: {
               modules: true,
-              // camelCase: true,
+              camelCase: true,
               localIdentName: "[name]_[local]_[hash:base64:3]",
               importLoaders: 1,
               sourceMap: true
             }
-          }
-          , {
-            loader: 'postcss-loader',
+          },
+          {
+            loader: "postcss-loader",
             options: {
               sourceMap: true,
               plugins: () => [
                 precss(),
                 autoprefixer({
-                  browsers: ['last 3 version', 'ie >= 10']
-                }),
+                  browsers: ["last 3 version", "ie >= 10"]
+                })
                 // postcsseasysprites({imagePath: '../img', spritePath: './assets/dist/img'})
               ]
             }
@@ -104,7 +104,7 @@ const config = {
                 precss(),
                 autoprefixer({
                   browsers: ["last 3 version", "ie >= 10"]
-                }),
+                })
                 // postcsseasysprites({
                 //   imagePath: "../img",
                 //   spritePath: "./assets/dist/img"
