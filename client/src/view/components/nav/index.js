@@ -20,7 +20,7 @@ class Nav extends Component {
             <Link to="/">首 页</Link>
           </li>
           <li className="fl">
-            <Link to="/404">发现</Link>
+            <Link to="/notFound">发现</Link>
           </li>
           <li className={logined ? "avatar" : "login_visable"}>
             {/* <img src={defaultAvatar} /> */}

@@ -12,7 +12,7 @@ export default class App extends Component {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/404">404</Link>
+            <Link to="/notFound">notFound</Link>
           </li>
           <li>
             <Link to="/user">User</Link>

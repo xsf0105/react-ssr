@@ -17,7 +17,7 @@ let validataEmail = false;
 
 const asyncValidate = async (values, dispatch, props, field) => {
   if (field == "username") {
-    await axios.post("/vaildate_user", values).then(function(response) {
+    await axios.post("/vaildateUser", values).then(function(response) {
       if (!response.data.success) {
         validataUsername = true;
         console.log(validataUsername, validataEmail);
@@ -36,7 +36,7 @@ const asyncValidate = async (values, dispatch, props, field) => {
   }
 
   if (field == "email") {
-    await axios.post("/vaildate_email", values).then(function(response) {
+    await axios.post("/vaildateEmail", values).then(function(response) {
       if (!response.data.success) {
         validataEmail = true;
         console.log(validataUsername, validataEmail);
@@ -57,7 +57,7 @@ const asyncValidate = async (values, dispatch, props, field) => {
 
 const submit = async function submit(values) {
   let _this = this;
-  await axios.post("/reg_user", values).then(function(response) {
+  await axios.post("/regUser", values).then(function(response) {
     console.log(response);
     if (!response.data.success) {
       throw new SubmissionError({ _error: response.data.message });

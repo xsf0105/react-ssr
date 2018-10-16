@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import HomePage from "./view/homePage.js";
-import Page404 from "./view/containers/notFound/404.js";
+import NotFound from "./view/containers/notFound/index.js";
 import User from "./view/containers/user.js";
 import Login from "./view/containers/login/index.js";
 import Reg from "./view/containers/reg/index.js";
@@ -18,7 +18,7 @@ export default class routes extends Component {
           <Route path="/login" component={Login} />
           <Route path="/reg" component={Reg} />
           <Route path="/logout" component={Logout} />
-          <Route component={Page404} />
+          <Route component={NotFound} />
         </Switch>
       </Router>
     );
@@ -34,7 +34,7 @@ export default class routes extends Component {
 //         <Route path="/login" component={Login}/>
 //         <Route path="/reg" component={Reg}/>
 //         <Route path="/logout" component={Logout}/>
-//         <Route component={Page404}/>
+//         <Route component={PagenotFound}/>
 //       </Switch>
 //       </div>
 //     </Router>
