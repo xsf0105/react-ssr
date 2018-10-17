@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-import "../../reset.css";
 import "./index.css";
 
 class Nav extends Component {

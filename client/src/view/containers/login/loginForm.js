@@ -1,4 +1,3 @@
-"use strict";
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Field, reduxForm, SubmissionError } from "redux-form";
@@ -12,7 +11,7 @@ if (process.env.NODE_ENV !== "production") {
 
 const submit = async function submit(values) {
   let _this = this;
-  await axios.post("/login", values).then(function(response) {
+  await axios.post("/rest/v1/login", values).then(function(response) {
     if (!response.data.success) {
       throw new SubmissionError({ _error: response.data.message });
     } else {
@@ -32,9 +31,6 @@ class LoginForm extends Component {
       <form onSubmit={handleSubmit(submit.bind(this))}>
         <div className={error ? "tips-show" : "tips"}>{error}</div>
         <ul className="form">
-          <li>
-            <i className="segmentation" />
-          </li>
           <li>
             <b>去登录</b>
           </li>

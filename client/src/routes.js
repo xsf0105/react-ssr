@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import HomePage from "./view/homePage.js";
-import NotFound from "./view/containers/notFound/index.js";
-import User from "./view/containers/user.js";
-import Login from "./view/containers/login/index.js";
 import Reg from "./view/containers/reg/index.js";
+import Login from "./view/containers/login/index.js";
 import Logout from "./view/containers/logout/logout.js";
+import NotFound from "./view/containers/notFound/index.js";
 
 export default class routes extends Component {
   render() {
@@ -14,7 +13,6 @@ export default class routes extends Component {
       <Router>
         <Switch>
           <Route path="/" exact component={HomePage} />
-          <Route path="/user" component={User} />
           <Route path="/login" component={Login} />
           <Route path="/reg" component={Reg} />
           <Route path="/logout" component={Logout} />

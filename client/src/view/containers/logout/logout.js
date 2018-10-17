@@ -1,12 +1,9 @@
-"use strict";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import axios from "axios";
 import * as actions from "../../../redux/actions/index";
 
 import Nav from "../../components/nav/index.js";
-
-import "../../../view/reset.css";
 
 class App extends Component {
   componentDidMount() {

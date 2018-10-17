@@ -1,107 +1,3 @@
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  background-color: #f4f5f5;
-}
-
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  margin: 0;
-  padding: 0;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-audio, canvas, video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-body, button, input, select, textarea {
-  font: 12px/1.5 "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun,
-    sans-serif;
-  font-weight: 200;
-}
-
-input, select, textarea {
-  font-size: 100%;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-th {
-  text-align: inherit;
-}
-
-fieldset, img {
-  border: 0;
-}
-
-iframe {
-  display: block;
-}
-
-abbr, acronym {
-  border: 0;
-  font-variant: normal;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-address, caption, cite, code, dfn, em, th, var {
-  font-style: normal;
-  font-weight: 500;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-/* 对齐是排版最重要的因素, 别让什么都居中 */
-
-caption, th {
-  text-align: left;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: 500;
-}
-
-q:before, q:after {
-  content: "";
-}
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-a:hover {
-  /*text-decoration: underline;*/
-}
-
-ins, a {
-  text-decoration: none;
-}
 .main-header {
   position: relative;
   background: #fff;
@@ -256,92 +152,111 @@ li.nav-item:not(:last-child) {
   background-color: #0371df;
   color: #fff;
 }
-.wrapper {
-    text-align: center;
-    padding-top: 38px;
-    line-height: 2em;
-    font-size: 12px;
-}
-.wrapper img {
-    margin-bottom: 30px;
-}
-/* login page style */
-
-.form {
-    width: 280px;
-    margin: 0 auto;
-    padding-bottom: 80px;
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background-color: #f4f5f5;
 }
 
-.form li {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #575757;
-    position: relative;
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
 }
 
-.form li .segmentation {
-    background: #eeeeee;
-    border-radius: 5px;
-    display: inline-block;
-    width: 74px;
-    height: 6px;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
-.form li input {
-    border: none;
-    text-align: center;
-    outline: none;
-    width: 100%;
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 
-.form li span.error {
-    color: #f00;
-    position: absolute;
-    right: -115px;
-    font-size: 12px;
-    line-height: 15px;
-    bottom: 8px;
-    width: 110px;
-    text-align: left;
+body, button, input, select, textarea {
+  font: 12px/1.5 "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun,
+    sans-serif;
+  font-weight: 200;
 }
 
-.form li .form_submit {
-    border: 1px solid #c9c9c9;
-    width: 100%;
-    background: #ffffff;
-    height: 45px;
-    line-height: 45px;
-    color: #727272;
-    cursor: pointer;
-    border-radius: 5px;
-    outline: none;
-    font-size: 14px;
+input, select, textarea {
+  font-size: 100%;
 }
 
-.form li .remmber_input
-        {
-    width: auto;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.form li .remmber_pw {
-    font-size: 14px;
-    margin-left: 5px;
+th {
+  text-align: inherit;
 }
 
-.form li.form_border {
-    padding-top: 40px;
-    border-bottom: 1px solid #eee;
+fieldset, img {
+  border: 0;
 }
 
-.form li.form_pw {
-    padding-bottom: 40px;
+iframe {
+  display: block;
 }
 
-.form li.form-top {
-    padding-top: 40px;
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
 }
+
+del {
+  text-decoration: line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+
+q:before, q:after {
+  content: "";
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+a:hover {
+  /*text-decoration: underline;*/
+}
+
+ins, a {
+  text-decoration: none;
+}
+
 .reg-container {
   //   background: #fff;
   position: relative;
@@ -439,5 +354,90 @@ li.nav-item:not(:last-child) {
 }
 .reg-form .tips-show {
   display: block;
+}/* login page style */
+
+.form {
+    width: 280px;
+    margin: 0 auto;
+    padding-bottom: 80px;
 }
+
+.form li {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #575757;
+    position: relative;
+}
+
+.form li .segmentation {
+    background: #eeeeee;
+    border-radius: 5px;
+    display: inline-block;
+    width: 74px;
+    height: 6px;
+}
+
+.form li input {
+    border: none;
+    text-align: center;
+    outline: none;
+    width: 100%;
+}
+
+.form li span.error {
+    color: #f00;
+    position: absolute;
+    right: -115px;
+    font-size: 12px;
+    line-height: 15px;
+    bottom: 8px;
+    width: 110px;
+    text-align: left;
+}
+
+.form li .form_submit {
+    border: 1px solid #c9c9c9;
+    width: 100%;
+    background: #ffffff;
+    height: 45px;
+    line-height: 45px;
+    color: #727272;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form li .remmber_input
+        {
+    width: auto;
+}
+
+.form li .remmber_pw {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.form li.form_border {
+    padding-top: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.form li.form_pw {
+    padding-bottom: 40px;
+}
+
+.form li.form-top {
+    padding-top: 40px;
+}.wrapper {
+    text-align: center;
+    padding-top: 38px;
+    line-height: 2em;
+    font-size: 12px;
+}
+.wrapper img {
+    margin-bottom: 30px;
+}
+
 /*# sourceMappingURL=style.css.map*/

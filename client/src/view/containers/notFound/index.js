@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import Nav from '../../components/nav/index.js';
 
-import '../../reset.css';
 import './index.css';
 
 export default class App extends Component {

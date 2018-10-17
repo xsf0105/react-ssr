@@ -1,5 +1,5 @@
 {
-  "name": "mo",
+  "name": "react-ssr",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "build": "npm run clean && npm run build:webpack",
     "start": "node ./config/devServer.js"
   },
-  "author": "aemoe",
+  "author": "allan2coder",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.7.6",

@@ -2,15 +2,14 @@ import React, { Component } from "react";
 import Nav from "./components/nav/index.js";
 import axios from "axios";
 
-import "./reset.css";
 import "./homePage.css";
+import "./reset.css";
 
 class App extends Component {
-  componentDidMount(){
-    console.log(11)
-    axios.post("/rest/v1/getList").then(res=>{
+  componentDidMount() {
+    axios.post("/rest/v1/getList").then(res => {
       console.log(res);
-    })
+    });
   }
   render() {
     return (
@@ -70,11 +69,19 @@ class App extends Component {
                 </div>
                 <div className="input-group">
                   <div className="input-box">
-                    <input maxLength="20" placeholder="用户名" className="input" />
+                    <input
+                      maxLength="20"
+                      placeholder="用户名"
+                      className="input"
+                    />
                   </div>
 
                   <div className="input-box">
-                    <input maxLength="64" placeholder="手机号" className="input" />
+                    <input
+                      maxLength="64"
+                      placeholder="手机号"
+                      className="input"
+                    />
                   </div>
 
                   <div className="input-box">

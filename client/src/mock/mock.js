@@ -1,6 +1,15 @@
 import Mock from 'mockjs';
 
-Mock.mock('/login', {
+
+Mock.mock('/rest/v1/getList', {
+  'success': true,
+  'status': 200,
+  'message': '!!!!',
+  'data': {}
+});
+
+
+Mock.mock('/rest/v1/login', {
   'success': true,
   'status': 200,
   'message': '登录失败!',
@@ -25,12 +34,5 @@ Mock.mock('/regUser', {
   'success': true,
   'status': 200,
   'message': '注册失败!',
-  'data': {}
-});
-
-Mock.mock('/getList', {
-  'success': true,
-  'status': 200,
-  'message': '!!!!',
   'data': {}
 });

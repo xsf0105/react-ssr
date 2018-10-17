@@ -12,7 +12,7 @@ router.post("/rest/v1/getList", require("../containers/index.js").getList);
 
 // 登录页
 router.get("/login", require("../containers/login.js").index);
-router.post("/login", require("../containers/login.js").login);
+router.post("/rest/v1/login", require("../containers/login.js").login);
 router.get("/logout", require("../containers/login.js").logout);
 
 // 注册页

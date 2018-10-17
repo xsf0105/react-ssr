@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import Nav from "./../../components/nav/index.js";
 import LoginForm from "./loginForm";
 
-import "../../reset.css";
 import "./index.css";
 
 class App extends Component {
