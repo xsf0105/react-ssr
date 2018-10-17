@@ -59,7 +59,7 @@ pm2 log
 └── server 后端目录
     ├── auth 权限验证 存放用户验证部分
     ├── config 数据库 配置文件 Sequelize（可以对多种数据库进行操作）
-    ├── containers 后端控制层 C 层的代码存放目录
+    ├── controllers 后端控制层 C 层的代码存放目录
     ├── models 操作 数据库 代码逻辑
     ├── routes 后端路由
     └── view 后端页面
