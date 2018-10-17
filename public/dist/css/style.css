@@ -357,80 +357,84 @@ ins, a {
 }/* login page style */
 
 .form {
-    width: 280px;
-    margin: 0 auto;
-    padding-bottom: 80px;
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 .form li {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #575757;
-    position: relative;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #575757;
+  position: relative;
 }
 
 .form li .segmentation {
-    background: #eeeeee;
-    border-radius: 5px;
-    display: inline-block;
-    width: 74px;
-    height: 6px;
+  background: #eeeeee;
+  border-radius: 5px;
+  display: inline-block;
+  width: 74px;
+  height: 6px;
 }
 
 .form li input {
-    border: none;
-    text-align: center;
-    outline: none;
-    width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  width: 100%;
 }
 
 .form li span.error {
-    color: #f00;
-    position: absolute;
-    right: -115px;
-    font-size: 12px;
-    line-height: 15px;
-    bottom: 8px;
-    width: 110px;
-    text-align: left;
+  color: #f00;
+  position: absolute;
+  right: -115px;
+  font-size: 12px;
+  line-height: 15px;
+  bottom: 8px;
+  width: 110px;
+  text-align: left;
 }
 
 .form li .form_submit {
-    border: 1px solid #c9c9c9;
-    width: 100%;
-    background: #ffffff;
-    height: 45px;
-    line-height: 45px;
-    color: #727272;
-    cursor: pointer;
-    border-radius: 5px;
-    outline: none;
-    font-size: 14px;
+  border: 1px solid #c9c9c9;
+  width: 100%;
+  background: #ffffff;
+  height: 45px;
+  line-height: 45px;
+  color: #727272;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
 }
 
-.form li .remmber_input
-        {
-    width: auto;
+.form li .remmber_input {
+  width: auto;
 }
 
 .form li .remmber_pw {
-    font-size: 14px;
-    margin-left: 5px;
+  font-size: 14px;
+  margin-left: 5px;
 }
 
 .form li.form_border {
-    padding-top: 40px;
-    border-bottom: 1px solid #eee;
+  padding-top: 40px;
+  border-bottom: 1px solid #eee;
 }
 
 .form li.form_pw {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .form li.form-top {
-    padding-top: 40px;
-}.wrapper {
+  padding-top: 40px;
+}
+
+.form .tips-show {
+  display: block;
+}
+.wrapper {
     text-align: center;
     padding-top: 38px;
     line-height: 2em;

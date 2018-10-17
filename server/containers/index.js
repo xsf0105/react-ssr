@@ -55,8 +55,7 @@ export function index(ctx) {
 // demo Post
 export async function getList(ctx) {
   if (ctx.accepts("json", "html") == "json") {
-    // 数据库查询操作 Sequelize
-    const result = await User.findAll();
+    const result = await User.findAll(); // 用 Sequelize 查询数据库
     const callBackData = {
       success: true,
       data: result

@@ -6,8 +6,9 @@ import { Provider } from "react-redux";
 import bcrypt from "bcrypt";
 import passport from "koa-passport";
 import configureStore from "../../client/src/redux/store/configureStore";
-import db from "../config/db.js";
 import App from "../../client/src/view/containers/login/index.js";
+
+import db from "../config/db.js";
 const User = db.User;
 
 // get page and switch json and html

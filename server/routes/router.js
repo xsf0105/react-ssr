@@ -1,6 +1,5 @@
 /**
- * router.get('/path', async fn)
- * router.post('/path', async fn)
+ * router.get/post('/path', async fn)
  */
 import Router from "koa-router";
 
