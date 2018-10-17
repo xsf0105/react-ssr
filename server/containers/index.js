@@ -56,42 +56,20 @@ export function index(ctx) {
 // get something
 export async function getList(ctx) {
   if (ctx.accepts("json", "html") == "json") {
-    // let data = ctx.request.body; // 传参
-    //If reg data is null,reback some tips
-    // if (data.username) {
-    // let userCount = await User.count({
-    //   where: {
-    //     username: data.username
-    //   }
-    // });
-
-    // UserInfo.findAll().then(function(res) {
-    //   console.log(res, 888);
-    //   let callBackData = {
-    //     success: false,
-    //     status: 200,
-    //     message: "!!!",
-    //     data: {}
-    //   };
-    //   ctx.body = callBackData;
-    // });
-
-    User.findOne({
-      where: {
-        id: 1
-      }
-    }).then(res => {
-      console.log(res, 8888);
-      // let callBackData = {
-      //   success: false,
-      //   status: 200,
-      //   message: "!!!",
-      //   data: {}
-      // };
-      // ctx.body = callBackData;
+    let result = await UserInfo.findAll({
+      // where: {
+      //   username: "hello1234"
+      // }
     });
 
-    // }
+    let callBackData = {
+      success: true,
+      status: 200,
+      message: "用户名合法",
+      data: result
+    };
+
+    ctx.body = callBackData;
   }
 }
 
