@@ -1,15 +1,18 @@
 # React 服务端渲染
 
 ## 使用
-前端开发目录为：clent/，client 中执行:
 
+### 1、启动前端工程:
+前端开发目录为：clent/
 ```
 npm i
 npm start
 // 浏览器打开 http://localhost:8000/
 ```
 
-客户端开发及部署在根目录执行：
+### 2、启动服务端：
+客户端开发及部署在根目录
+
 ```
 npm i pm2 -g
 npm i
@@ -17,11 +20,20 @@ npm start
 // 浏览器打开 http://localhost:3000/
 ```
 
-## Mysql 使用
+### 3、启动 Mysql：
+- 先搭建 mysql 环境：官网下载mysql
+- 安装一个 mysql 的可视化工具，我选择的是：Navicat Premium
 
-开启本地数据库 Mysql, 将 mysql 中的文件夹 sql 文件导入数据库, 
-在 `server/config/db.json`
-中配置 mysql 的数据库名称和用户名密码
+启动mysql后，打开 mysql 可视化工具 Navicat Premium，
+- 连接数据库，账号密码在 `server/config/db.json`
+- 建表，本仓库提供了一份数据可以将 `mysql/user.sql` 直接导入
+
+
+Done!
+
+
+
+### 数据库如何操作？
 
 建立连接
 Sequelize会在初始化时设置一个连接池，这样你应该为每个数据库创建一个实例：
@@ -54,6 +66,8 @@ pm2 log
 ```
 ├── client 前端目录
 |
+├── mysql 数据库（第一次使用可以直接导入到本地）
+|
 ├── public 服务器静态资源
 |
 └── server 后端目录
@@ -67,7 +81,7 @@ pm2 log
 
 ### ps:
 - server/models
-Model相当于数据库中表，有时它也会被称为“模型”或“工厂”。Model不能通过构造函数创建，而只能通过sequlize.define方法来定义或通过sequlize.import导入。通过define定义一个Model，就相当于定义了一种模型与数据表之间的映射关系，通过模型可以实现对表记录的增、删、改、查等操作。
+Model相当于数据库中表，有时它也会被称为“模型”或“工厂”。`Model`不能通过构造函数创建，而只能通过`sequlize.define`方法来定义或通过`sequlize.import`导入。通过`define`定义一个`Model`，就相当于定义了一种模型与数据表之间的映射关系，通过模型可以实现对表记录的增、删、改、查等操作。
 
 ## License
 
