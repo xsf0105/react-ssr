@@ -14,7 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.7.6",
-    "axios": "^0.15.3",
+    "axios": "^0.18.1",
     "babel-core": "^6.23.1",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.3.2",
