@@ -52,7 +52,7 @@ class App extends Component {
               </nav>
               <ul>
                 <li>
-                  <a href="">xxx</a>
+                  <a href="">接下来自己倒腾吧</a>
                 </li>
               </ul>
             </div>

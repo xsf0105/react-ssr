@@ -3,7 +3,7 @@ import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom";
 import { layout } from "../view/layout.js";
 import { Provider } from "react-redux";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import passport from "koa-passport";
 import configureStore from "../../client/src/redux/store/configureStore";
 import App from "../../client/src/view/containers/login/index.js";
