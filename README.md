@@ -3,7 +3,7 @@
 ## 使用
 
 ### 1、启动前端工程:
-前端开发目录为：clent/
+前端开发目录为：client/
 ```
 npm i
 npm start
