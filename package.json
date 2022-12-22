@@ -36,7 +36,7 @@
     "cross-env": "^4.0.0",
     "css-modules-require-hook": "^4.0.5",
     "eslint": "^8.21.0",
-    "jsonwebtoken": "^7.3.0",
+    "jsonwebtoken": "^9.0.0",
     "koa": "^2.0.0-alpha.8",
     "koa-bodyparser": "^4.1.0",
     "koa-compress": "^2.0.0",
